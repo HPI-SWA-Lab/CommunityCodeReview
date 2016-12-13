@@ -1,0 +1,14 @@
+{
+	"category" : "Community-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"comment" ],
+	"name" : "CCCommentDone",
+	"pools" : [
+		 ],
+	"super" : "CCCommentBase",
+	"type" : "normal" }

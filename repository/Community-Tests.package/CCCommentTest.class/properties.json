@@ -1,0 +1,14 @@
+{
+	"category" : "Community-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CCCommentTest",
+	"pools" : [
+		 ],
+	"super" : "CommunityTestCase",
+	"type" : "normal" }

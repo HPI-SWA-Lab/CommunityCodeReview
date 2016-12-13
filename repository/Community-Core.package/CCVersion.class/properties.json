@@ -1,0 +1,15 @@
+{
+	"category" : "Community-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"uuid",
+		"ancestors" ],
+	"name" : "CCVersion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

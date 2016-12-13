@@ -1,0 +1,15 @@
+{
+	"category" : "Community-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"hash",
+		"timestamp" ],
+	"name" : "CCCommentBase",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
