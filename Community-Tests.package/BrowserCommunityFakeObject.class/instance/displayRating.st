@@ -1,0 +1,3 @@
+indirect inputs
+displayRating
+	^self

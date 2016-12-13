@@ -1,0 +1,14 @@
+{
+	"category" : "Community-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BrowserCommunityFakeObject",
+	"pools" : [
+		 ],
+	"super" : "Browser",
+	"type" : "normal" }

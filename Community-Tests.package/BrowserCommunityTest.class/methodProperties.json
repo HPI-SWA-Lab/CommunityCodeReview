@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"currentBrowsers" : "TD 7/7/2016 16:27",
+		"setUp" : "td 7/11/2016 12:10",
+		"tearDown" : "td 7/11/2016 12:10",
+		"testMinus" : "td 7/7/2016 17:25",
+		"testPlus" : "td 7/7/2016 17:25",
+		"testResetRating" : "td 7/9/2016 13:27" } }

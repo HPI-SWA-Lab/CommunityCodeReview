@@ -1,0 +1,14 @@
+{
+	"category" : "Community-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PlusVoting",
+	"pools" : [
+		 ],
+	"super" : "Voting",
+	"type" : "normal" }

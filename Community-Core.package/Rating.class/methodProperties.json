@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "TD 7/13/2016 14:45",
+		"minus" : "TD 7/13/2016 14:36",
+		"minusVotings" : "TD 7/13/2016 14:46",
+		"numberOfMinus" : "TD 7/13/2016 14:47",
+		"numberOfPlus" : "TD 7/13/2016 14:47",
+		"plus" : "TD 7/13/2016 14:37",
+		"plusVotings" : "TD 7/13/2016 14:46",
+		"reset" : "TD 7/13/2016 14:44",
+		"votings" : "TD 7/13/2016 14:34",
+		"votings:" : "TD 7/13/2016 14:34" } }

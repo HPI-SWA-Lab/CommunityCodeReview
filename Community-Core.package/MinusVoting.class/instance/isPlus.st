@@ -1,0 +1,3 @@
+voting
+isPlus
+	^ false

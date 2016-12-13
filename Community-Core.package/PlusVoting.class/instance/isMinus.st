@@ -1,0 +1,3 @@
+voting
+isMinus
+	^ false

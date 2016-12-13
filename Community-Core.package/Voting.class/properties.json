@@ -1,0 +1,14 @@
+{
+	"category" : "Community-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"timestamp" ],
+	"name" : "Voting",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

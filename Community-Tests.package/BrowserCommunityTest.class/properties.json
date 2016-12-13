@@ -1,0 +1,15 @@
+{
+	"category" : "Community-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"browser",
+		"previouslyOpenedBrowsers" ],
+	"name" : "BrowserCommunityTest",
+	"pools" : [
+		 ],
+	"super" : "CommunityTestCase",
+	"type" : "normal" }
