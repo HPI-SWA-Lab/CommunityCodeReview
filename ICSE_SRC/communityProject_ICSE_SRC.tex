@@ -388,13 +388,8 @@ tobias.duerschmid@student.hpi.de}
 %Telephone: (800) 555--1212, Fax: (888) 555--1212}
 %\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
 
-
-
-
 % use for special paper notices
 %\IEEEspecialpapernotice{(Invited Paper)}
-
-
 
 
 % make the title area
@@ -402,11 +397,17 @@ tobias.duerschmid@student.hpi.de}
 
 
 \begin{abstract}
-We preset a system that helps developers to give feedback on code quality.
+Code reviews play an important and sucessfull part in modern software development. 
+%
+But usually they happen only once before new code is merged into the main branch. 
+%
+We preset a concept that helps developers to continously give feedback on their source code directly in the IDE by using the metaphore of social networks. 
+%
+This reduces context switches for developers, improves the sofware develop process and even allows to give feedback to library and framework developers. 
 \end{abstract}
 
 \begin{IEEEkeywords}
-component; formatting; style; styling;
+code reviews; code quality; social coding; feedback;
 
 \end{IEEEkeywords}
 
@@ -421,15 +422,10 @@ component; formatting; style; styling;
 % creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
-
-
 \section{Introduction}
-Code Reviews
+%\section{Problem and Motivation}
 
-
-\section{Problem and Motivation}
-
-Code review coverage and participation have a significant impact on code quality~\cite{ackerman1989software, mcintosh2014impact}. 
+Code review coverage and participation have a significant impact on code quality and the correctness of software~\cite{ackerman1989software, mcintosh2014impact}. 
 %
 Developers do code reviews in order to finde defects, improve the code quality, dicuss alternative solutions, transfer knowledge, and improve the team awareness~\cite{bacchelli2013expectations}.
 %
@@ -437,11 +433,11 @@ Developers do code reviews in order to finde defects, improve the code quality, 
 %
 But traditionally code reviews are only done in pull requests that do happen only once before the code is merged into the main branch. 
 %
-This does not allow to continously give feedback on code quality of legacy code, does not support questions of new developers targeting existing code and forces the developers to leave their IDE for commenting one source code. 
+This does not allow to continously give feedback on code quality of legacy code, does not support questions of new developers targeting existing code and forces the developers to leave their IDE for commenting on source code.
 %
 
 %
-We preset a concept that targets these problems by supporting a community model for source code inside the IDE. 
+The main contribution is a new concept that targets these problems by supporting a community model for source code inside the IDE using the metaphore of social networks.
 %
 It allows developers to add comments to packages, classes, methods and method snippets. 
 
