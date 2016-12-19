@@ -12,6 +12,14 @@ get '/' do
   'The community code review project is online.'
 end
 
-post '/comment' do
+get '/all' do
+  json ReviewEntry.all
+end
 
+get '/comments' do
+  json Comment.all
+end
+
+get '/likes' do
+  json Comment.all
 end
