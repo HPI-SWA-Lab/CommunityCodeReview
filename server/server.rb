@@ -22,20 +22,28 @@ get '/comments' do
 end
 
 get '/likes' do
-  json Comment.all
+  json Like.all
 end
 
 post '/comment' do
   raw_comment = JSON.parse(request.body.read, {:symbolize_names => true})
+  json create_entry_and_domain_object(raw_comment, Comment)
+end
 
-  entry = ReviewEntry.createFromJSON(raw_comment)
+post '/like' do
+  raw_like = JSON.parse(request.body.read, {:symbolize_names => true})
+  json create_entry_and_domain_object(raw_like, Like)
+end
 
-  comment = Comment.newFromJSON(raw_comment)
-  comment.review_entry = entry
+def create_entry_and_domain_object(json_data, content_class)
+  entry = ReviewEntry.createFromJSON(json_data)
 
-  if comment.save
-    json comment
-  else 
+  new_object = content_class.newFromJSON(json_data)
+  new_object.review_entry = entry
+
+  if not new_object.save
     halt 500
   end
+
+  return new_object
 end
