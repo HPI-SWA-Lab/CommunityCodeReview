@@ -2,6 +2,10 @@ require 'sinatra'
 require 'sinatra/json'
 require 'sinatra/activerecord'
 
+require './model/review_entry'
+require './model/comment'
+require './model/like'
+
 set :database_file, 'config/database.yml'
 
 get '/' do
@@ -11,5 +15,3 @@ end
 post '/comment' do
 
 end
-
-
