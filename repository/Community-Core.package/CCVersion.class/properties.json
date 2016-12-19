@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"uuid",
-		"ancestors" ],
+		 ],
 	"name" : "CCVersion",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "MCVersionInfo",
 	"type" : "normal" }

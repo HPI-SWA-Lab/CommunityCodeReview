@@ -1,6 +1,4 @@
 testing
 testMorphStepCommitID
 
-	|repo|
-	repo := CCRepository new.
-	self assert: (repo getCommitForMethod: 'step' inClass: 'Morph') notNil. 
+	self assert: (CCRepository getCommitForMethod: 'step' inClass: 'Morph') notNil. 
