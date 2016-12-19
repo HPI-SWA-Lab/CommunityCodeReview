@@ -6,4 +6,4 @@ getRatingForMethod: aMethodName inClass: aClassName
 		or: aClassName
 		nil: [^ Rating new].
 	keyName := (aClassName , 'Method' , aMethodName) asSymbol.
-	^ self dict at: keyName ifAbsent: Rating new
+	^ self methodsDict at: keyName ifAbsent: Rating new

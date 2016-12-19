@@ -1,4 +1,4 @@
 protocol
 reset
 
-	self dict: Dictionary new.
+	self methodsDict: Dictionary new.

@@ -2,5 +2,5 @@ util
 setUp
 	super setUp.
 	
-	temporyDict := CCCommentDictionary dict clone.
+	temporyDict := CCCommentDictionary methods clone.
 	CCCommentDictionary reset

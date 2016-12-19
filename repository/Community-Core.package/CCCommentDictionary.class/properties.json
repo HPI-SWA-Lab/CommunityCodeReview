@@ -1,9 +1,9 @@
 {
 	"category" : "Community-Core",
 	"classinstvars" : [
-		"Dict" ],
+		 ],
 	"classvars" : [
-		"Dict" ],
+		"MethodsDict" ],
 	"commentStamp" : "TD 7/7/2016 15:28",
 	"instvars" : [
 		 ],
