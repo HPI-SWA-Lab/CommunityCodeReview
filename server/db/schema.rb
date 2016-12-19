@@ -12,28 +12,26 @@
 
 ActiveRecord::Schema.define(version: 20161219132445) do
 
-  create_table "comment", force: :cascade do |t|
+  create_table "comments", force: :cascade do |t|
     t.string   "content",           default: "", null: false
-    t.integer  "parent_comment_id",              null: false
+    t.integer  "parent_comment_id"
     t.integer  "review_entry_id"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
-    t.index ["review_entry_id"], name: "index_comment_on_review_entry_id"
+    t.index ["review_entry_id"], name: "index_comments_on_review_entry_id"
   end
 
-  create_table "like", force: :cascade do |t|
+  create_table "likes", force: :cascade do |t|
     t.integer  "review_entry_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.index ["review_entry_id"], name: "index_like_on_review_entry_id"
+    t.index ["review_entry_id"], name: "index_likes_on_review_entry_id"
   end
 
-  create_table "review_entry", force: :cascade do |t|
-    t.string  "commit_id",       default: "", null: false
-    t.string  "metaobject_hash", default: "", null: false
-    t.string  "author",          default: "", null: false
-    t.string  "entry_type",      default: "", null: false
-    t.integer "entry_object_id",              null: false
+  create_table "review_entries", force: :cascade do |t|
+    t.string "commit_id",        default: "", null: false
+    t.string "meta_object_hash", default: "", null: false
+    t.string "author",           default: "", null: false
   end
 
 end
