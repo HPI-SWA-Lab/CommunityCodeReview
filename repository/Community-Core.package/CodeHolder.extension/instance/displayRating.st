@@ -1,3 +1,3 @@
 *Community-Core
 displayRating
-	RatingDictionary displayRatingForMethod: self selectedMessageName inClass: self selectedClassOrMetaClass name
+	CCCommentDictionary displayRatingForMethod: self selectedMessageName inClass: self selectedClassOrMetaClass name

@@ -2,4 +2,4 @@ util
 tearDown
 	super tearDown.
 	
-	RatingDictionary dict: temporyDict
+	CCCommentDictionary dict: temporyDict

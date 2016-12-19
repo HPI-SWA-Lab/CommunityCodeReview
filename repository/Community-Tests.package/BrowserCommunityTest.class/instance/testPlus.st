@@ -7,8 +7,8 @@ testPlus
 
 	browser := BrowserCommunityFakeObject fullOnClass: self class selector: methodName.
 	
-	oldMinus := (RatingDictionary getRatingForMethod: methodName inClass: class) numberOfMinus.
-	oldPlus := (RatingDictionary getRatingForMethod: methodName inClass: class) numberOfPlus.
+	oldMinus := (CCCommentDictionary getRatingForMethod: methodName inClass: class) numberOfMinus.
+	oldPlus := (CCCommentDictionary getRatingForMethod: methodName inClass: class) numberOfPlus.
 
 	browser votePlus.
 	self assertRatingForMethod: methodName inClass: class equalsPlus: oldPlus + 1 minus: oldMinus.

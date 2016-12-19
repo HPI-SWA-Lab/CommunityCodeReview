@@ -3,8 +3,8 @@
 		 },
 	"instance" : {
 		"assertRating:equalsPlus:minus:" : "TD 7/7/2016 15:38",
-		"assertRatingForMethod:inClass:equalsPlus:minus:" : "TD 7/7/2016 15:38",
+		"assertRatingForMethod:inClass:equalsPlus:minus:" : "TD 12/19/2016 11:30",
 		"denyRating:equalsPlus:minus:" : "TD 7/7/2016 16:34",
-		"denyRatingForMethod:inClass:equalsPlus:minus:" : "TD 7/7/2016 15:39",
-		"setUp" : "td 7/11/2016 12:09",
-		"tearDown" : "td 7/11/2016 12:09" } }
+		"denyRatingForMethod:inClass:equalsPlus:minus:" : "TD 12/19/2016 11:30",
+		"setUp" : "TD 12/19/2016 11:15",
+		"tearDown" : "TD 12/19/2016 11:00" } }

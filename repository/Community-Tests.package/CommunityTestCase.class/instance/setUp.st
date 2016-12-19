@@ -2,4 +2,5 @@ util
 setUp
 	super setUp.
 	
-	temporyDict := RatingDictionary dict clone
+	temporyDict := CCCommentDictionary dict clone.
+	CCCommentDictionary reset

@@ -1,4 +1,4 @@
 *Community-Core
 voteMinus
-	RatingDictionary minusForMethod: self selectedMessageName inClass: self selectedClassOrMetaClass name.
+	CCCommentDictionary minusForMethod: self selectedMessageName inClass: self selectedClassOrMetaClass name.
 	self displayRating

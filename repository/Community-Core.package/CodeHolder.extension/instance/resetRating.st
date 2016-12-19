@@ -1,3 +1,3 @@
 *Community-Core
 resetRating
-	RatingDictionary resetRationForMethod: self selectedMessageName inClass: self selectedClassOrMetaClass name
+	CCCommentDictionary resetRationForMethod: self selectedMessageName inClass: self selectedClassOrMetaClass name

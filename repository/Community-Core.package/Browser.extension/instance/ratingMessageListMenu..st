@@ -5,7 +5,7 @@ ratingMessageListMenu: aMenu
 		-
 		('display rating' displayRating)
 		('plus' votePlus)
-		('minus' voteMinus)
+		('comment' addComment)
 		('reset' resetRating)
 		- );
 		yourself

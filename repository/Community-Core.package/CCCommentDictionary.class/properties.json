@@ -7,7 +7,7 @@
 	"commentStamp" : "TD 7/7/2016 15:28",
 	"instvars" : [
 		 ],
-	"name" : "RatingDictionary",
+	"name" : "CCCommentDictionary",
 	"pools" : [
 		 ],
 	"super" : "Object",
