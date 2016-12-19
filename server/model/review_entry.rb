@@ -9,4 +9,8 @@ class ReviewEntry < ActiveRecord::Base
     self.comment || self.like
   end
 
+  def self.createFromJSON(json_data)
+    return self.create(json_data.slice(:commit_id, :meta_object_hash, :author))
+  end
+
 end
