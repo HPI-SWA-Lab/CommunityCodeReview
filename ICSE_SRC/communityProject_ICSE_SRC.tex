@@ -64,6 +64,8 @@
 % draft mode.
 %
 \documentclass[10pt, conference]{IEEEtran}
+
+\usepackage{url}
 % Add the compsocconf option for Computer Society conferences.
 %
 % If IEEEtran.cls has not been installed into the LaTeX system files,
@@ -431,16 +433,36 @@ This does not allow to continuously give feedback on code quality of legacy code
 %
 
 %
-The main contribution is a new concept that targets these problems by supporting a community model for source code inside the IDE using the metaphor of social networks.
+The main contribution is a new concept targeting these problems by supporting a community model for source code inside the IDE using the metaphor of social networks.
 %
 It allows developers to add comments to packages, classes, methods and method snippets. 
 
-\section{Background and Related Work}
+\section{Background}
+
 Social coding~\cite{dabbish2012social}
 
-\section{Approach and Uniqueness}
-Unlike 
+\section{Approach}
+Social networks like Facebook, Twitter, or Stack Overflow allow to comment on any contend and show happiness about the contend using an "I like" button.
+% 
+We transfer this metaphor to programming by offering develops to comment on any code and to like code snippets in the project using their IDE.  
+%
+Unlike pull request reviews, this can be done at any time for any piece of code. 
+%
 
+\section{Related Work}
+Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE}. 
+%
+In contrast to that, our concept gives continuous feedback and therefore allows new developers to comment on old code. 
+%
+While these pull requests usually are done using a websit like GitHub or BitBucket~\cite{dabbish2012social, thung2013github}, our concept allow the developers to stay in their IDE and avoid context switches. 
+%
+This provides a more self-sustaining environment that supports the liveness of the development process. 
+%
+Furthermore our concept allows to comment on library code and framework code and therefore give feedback to the developers of third party software. 
+%
+However a dedicated review process before merging changes into the main branch let the developers focus on issues raised up by the specific changes. 
+%
+Therefore we propose to use our concept in conjunction with pull request reviews and not instead of it.
 \section{Results and Contribution}
 
 
@@ -558,8 +580,6 @@ I would like to thank Patrick Rein for his support and the HPI software architec
 	
 \bibliographystyle{ieeetr}
 \bibliography{IEEEabrv,bibliography}
-
-
 
 
 % that's all folks
