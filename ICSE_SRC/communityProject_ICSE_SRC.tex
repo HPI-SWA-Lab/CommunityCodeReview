@@ -465,7 +465,7 @@ After Alice has finished her issue, Bob enjoys reading her code and therefore pu
 %Insert meta model here
 We implemented this tool using a client-server architecture. 
 %
-The server manages the comments and the client created, modifies and shows the comments targeting the code shown in the IDE. 
+The server manages the comments in a database and the client created, modifies and shows the comments in the IDE. 
 %
 \section{Related Work}
 Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE}. 
@@ -482,7 +482,21 @@ However a dedicated review process before merging changes into the main branch l
 %
 Therefore we propose to use our concept in conjunction with pull request reviews and not instead of it.
 \section{Discussion}
+Our approach encourages continuous conversation about source code.
+%
+It simplifies discussion between distant developers in large organizations by providing a community platform that forwards a comment automatically to the author of the concerned code. 
+%
+Furthermore, we argue, that using this approach, many source code comment will move out of the code base into the social coding comment database. 
+%
+This keeps the code clean and focuses.
+%
 
+%
+Unfortunately we did not find any solution how to dead with developers working on the project but not having installed our tool. 
+%
+This could lead to inconsistent states for examples, when this developer moves a method that attached by a comment. 
+%
+Therefore this tool does only work correctly if all working developers have installed our tool. 
 \section{Conclusion}
 We proposed a tool that helps developers continuously giving feedback on code quality and potential mistakes.
 %
