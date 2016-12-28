@@ -417,7 +417,7 @@ code reviews; code quality; social coding; feedback;
 
 \section{Introduction}
 %\section{Problem and Motivation}
-Performing code reviews is an important practice at companies and open source projects~\cite{balachandran2013PeerCodeReviews, bird2015CodeReviewPlatform, rigby2013PeerCodeReviews}, because code review coverage and participation have a significant impact on code quality and the correctness of software~\cite{ackerman1989software, mcintosh2014impact}. 
+Performing code reviews is an important practice at companies and open source projects~\cite{balachandran2013PeerCodeReviews, bird2015CodeReviewPlatform, rigby2013PeerCodeReviews, czerwonka2015codereviews}, because code review coverage and participation have a significant impact on code quality and the correctness of software~\cite{ackerman1989software, mcintosh2014impact}. 
 %
 Developers conduct code reviews in order to finde defects, improve the code quality, dicuss alternative solutions, transfer knowledge, and improve the team awareness~\cite{bacchelli2013expectations}.
 %
@@ -434,8 +434,19 @@ The main contribution is a new concept targeting these problems by supporting a 
 It allows developers to casually add comments to packages, classes, methods and method snippets with minimum effort.
 
 \section{Background}
-
-Social coding~\cite{dabbish2012social}
+\subsection{Social Coding}
+Social coding is the community-based development of software.
+%
+Social coding sites like GitHub and BitBucket enables substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social}.
+%
+Therefore social coding is a new and promising approach for improving the software development process.
+ 
+\subsection{Code Reviews}
+Most of the comments in code reviews target improvements, understandability, social communication and defects~\cite{bacchelli2013expectations}.
+%
+Code reviews of large changes (20 files or more) are less useful~\cite{czerwonka2015codereviews}.
+%
+Therefore our approach tries to continuously give feedback just while reading a piece of code in the IDE.  
 
 \section{Approach}
 Social networks like Facebook, Twitter, or Stack Overflow allow to comment on any contend and show happiness about the contend using an "I like" button.
