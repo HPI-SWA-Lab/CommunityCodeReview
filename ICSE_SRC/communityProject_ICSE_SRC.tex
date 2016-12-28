@@ -65,6 +65,7 @@
 %
 \documentclass[10pt, conference]{IEEEtran}
 
+\usepackage[para]{footmisc}
 \usepackage{url}
 % Add the compsocconf option for Computer Society conferences.
 %
@@ -434,26 +435,22 @@ The main contribution is a new concept targeting these problems by supporting a 
 It allows developers to casually add comments to packages, classes, methods and method snippets with minimum effort.
 
 \section{Background}
-\subsection{Social Coding}
+%\subsection{Social Coding}
 Social coding is the community-based development of software.
 %
-Social coding sites like GitHub and BitBucket enables substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social}.
+Social coding sites like GitHub\footnote{https://github.com} and BitBucket\footnote{https://bitbucket.org} enables substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social}.
 %
 Therefore social coding is a new and promising approach for improving the software development process.
  
-\subsection{Code Reviews}
-Most of the comments in code reviews target improvements, understandability, social communication and defects~\cite{bacchelli2013expectations}.
-%
-Code reviews of large changes (20 files or more) are less useful~\cite{czerwonka2015codereviews}.
-%
-Therefore our approach tries to continuously give feedback just while reading a piece of code in the IDE.  
 
 \section{Approach}
-Social networks like Facebook, Twitter, or Stack Overflow allow to comment on any contend and show happiness about the contend using an "I like" button.
+Social networks like Facebook\footnote{https://facebook.com}, Twitter\footnote{https://twitter.com}, or Stack Overflow\footnote{https://stackoverflow.com} allow to comment on any contend and show happiness about the contend using an "I like" button.
 % 
 We transfer this metaphor to programming by offering develops to comment on any code and to like code snippets in the project using their IDE.  
 %
-Unlike pull request reviews, this can be done at any time for any piece of code. 
+Code reviews of large changes (20 files or more) are less useful~\cite{czerwonka2015codereviews}.
+%
+Therefore our approach tries to continuously give feedback just while reading a piece of code inside the IDE. 
 %
 \section{Walkthrough}
 The developer Alice reads a piece of code relevant to her current issue.
@@ -482,7 +479,7 @@ Many projects working with feature branches perform code reviews during pull req
 %
 In contrast to that, our concept gives continuous feedback and therefore allows new developers to comment on old code. 
 %
-While these pull requests usually are done using a websit like GitHub or BitBucket~\cite{dabbish2012social, thung2013github}, our concept allow the developers to stay inside their IDE and avoid context switches. 
+While these pull requests usually are done using a social coding website~\cite{dabbish2012social, thung2013github}, our concept allows the developers to stay inside their IDE and avoid context switches. 
 %
 This provides a more self-sustaining environment that supports the liveness of the development process. 
 %
