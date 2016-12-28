@@ -350,7 +350,7 @@
 
 
 % author names and affiliations
-% use a multiple column layout for up to two different
+% use a multiple column layout for up to two cterent
 % affiliations
 
 \author{\IEEEauthorblockN{Tobias D{\"u}rschmid}
@@ -441,8 +441,6 @@ Social coding is the community-based development of software.
 Social coding sites like GitHub\footnote{https://github.com} and BitBucket\footnote{https://bitbucket.org} enables substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social}.
 %
 Therefore social coding is a new and promising approach for improving the software development process.
- 
-
 \section{Approach}
 Social networks like Facebook\footnote{https://facebook.com}, Twitter\footnote{https://twitter.com}, or Stack Overflow\footnote{https://stackoverflow.com} allow to comment on any contend and show happiness about the contend using an "I like" button.
 % 
@@ -477,17 +475,23 @@ The server manages the comments in a database and the client created, modifies a
 \section{Related Work}
 Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE, yu2015pullrequests, tsay2014contributionGithub, gousios2014PullBasedSD, rahman2014pullrequests, tsay2014ContributionDiscussion}. 
 %
-In contrast to that, our concept gives continuous feedback and therefore allows new developers to comment on old code. 
+Tools like CodeFlow~\cite{bird2015CodeReviewPlatform}, Mondrian~\cite{kennedy2006Mondrian}, Gerrit~\cite{google2016gerrit} and Phabricator~\cite{tsotsis2011Phabricator} support these change-based code reviews.
 %
-While these pull requests usually are done using a social coding website~\cite{dabbish2012social, thung2013github}, our concept allows the developers to stay inside their IDE and avoid context switches. 
+In contrast to that, our concept gives feedback on the current state of code instead of a change. 
+%
+The reviews supported by these tools are made using a push model, meaning that developer request reviews, while our tool uses a pull model, meaning that developers can comment on any code.
+%
+Hence our concept allows to comment on library code and framework code and therefore give feedback to the developers of third party software. 
+%
+Furthermore our feedback is continuous and therefore allows new developers to comment on old code. 
+%
+In contrast to existing tools, our concept allows the developers to stay inside their IDE and avoid context switches. 
 %
 This provides a more self-sustaining environment that supports the liveness of the development process. 
 %
-Furthermore our concept allows to comment on library code and framework code and therefore give feedback to the developers of third party software. 
-%
 However a dedicated review process before merging changes into the main branch let the developers focus on issues raised up by the specific changes. 
 %
-Therefore we propose to use our concept in conjunction with pull request reviews and not instead of it.
+Therefore we propose to use our concept in conjunction with pull requests or	 other change-based reviews and not instead of it.
 %
 \\
 
@@ -497,15 +501,6 @@ Discussions and questions about the source code traditionally are done using mai
 The recent emergence of Q\&A sites introduces gamification of archiving reputation for answering questions~\cite{vasilescu2014QA}.
 %
 But like pull requests, they usually are not done inside the IDE but on a separate StackExchange network like StackOverflow.
-%
-\\
-
-%
-The tools CodeFlow~\cite{bird2015CodeReviewPlatform}, Mondrian~\cite{kennedy2006Mondrian}, Gerrit~\cite{google2016gerrit} and Phabricator~\cite{tsotsis2011Phabricator} providing the ability to focus on code reviews. 
-%
-But Developers have to leave their IDE to create or review code changes. 
-%
-The reviews are made using a push model, meaning that developer request reviews, while our tool uses a pull model, meaning that developers can comment on any code.  
 \section{Discussion}
 Our approach encourages continuous conversation about source code.
 %
