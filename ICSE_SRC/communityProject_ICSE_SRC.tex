@@ -390,9 +390,9 @@ tobias.duerschmid@student.hpi.de}
 
 
 \begin{abstract}
-Code reviews play an important and successful part in modern software development. 
+Code reviews play an important and successful role in modern software development. 
 %
-But usually they happen only once before new code is merged into the main branch. 
+But usually they happen only once before new code is merged into the main branch.
 %
 We preset a concept that helps developers to continuously give feedback on their source code directly in the IDE by using the metaphor of social networks. 
 %
@@ -417,8 +417,7 @@ code reviews; code quality; social coding; feedback;
 
 \section{Introduction}
 %\section{Problem and Motivation}
-
-Code review coverage and participation have a significant impact on code quality and the correctness of software~\cite{ackerman1989software, mcintosh2014impact}. 
+Performing code reviews is an important practice at companies and open source projects~\cite{balachandran2013PeerCodeReviews, bird2015CodeReviewPlatform, rigby2013PeerCodeReviews}, because code review coverage and participation have a significant impact on code quality and the correctness of software~\cite{ackerman1989software, mcintosh2014impact}. 
 %
 Developers do code reviews in order to finde defects, improve the code quality, dicuss alternative solutions, transfer knowledge, and improve the team awareness~\cite{bacchelli2013expectations}.
 %
@@ -468,7 +467,7 @@ We implemented this tool using a client-server architecture.
 The server manages the comments in a database and the client created, modifies and shows the comments in the IDE. 
 %
 \section{Related Work}
-Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE}. 
+Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE, yu2015pullrequests, tsay2014contributionGithub, gousios2014PullBasedSD, rahman2014pullrequests, tsay2014ContributionDiscussion}. 
 %
 In contrast to that, our concept gives continuous feedback and therefore allows new developers to comment on old code. 
 %
@@ -481,6 +480,24 @@ Furthermore our concept allows to comment on library code and framework code and
 However a dedicated review process before merging changes into the main branch let the developers focus on issues raised up by the specific changes. 
 %
 Therefore we propose to use our concept in conjunction with pull request reviews and not instead of it.
+%
+\\
+
+%
+Discussions and questions about the source code traditionally are done using mailing lists~\cite{vasilescu2014QA}.
+%
+The recent emergence of Q\&A sites introduces gamification of archiving reputation for answering questions~\cite{vasilescu2014QA}.
+%
+But like pull requests, they usually are not done inside the IDE but on a separate StackExchange network like StackOverflow.
+%
+\\
+
+%
+CodeFlow~\cite{bird2015CodeReviewPlatform} by Microsoft is a stand alone tool for code reviews. 
+%
+Developers have to leave their IDE to create or review code changes. 
+%
+The reviews are made using a push model, meaning that developer request reviews, while our tool uses a pull model, meaning that developers can comment on any code.  
 \section{Discussion}
 Our approach encourages continuous conversation about source code.
 %
