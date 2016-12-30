@@ -426,7 +426,7 @@ Studies confirmed, that review coverage and participation have a significant imp
 %
 But traditionally code reviews are done only once before the code is merged into the main branch. 
 %
-This does not allow to continuously give feedback on code quality (especially of legacy code), does not support questions of new developers targeting existing code and forces the developers to leave their IDE for commenting on code.
+This does not allow to continuously give feedback on code quality (especially of legacy code), does not support questions of new developers concerning existing code and forces the developers to leave their IDE for commenting on code.
 %
 
 %
@@ -438,13 +438,13 @@ It allows developers to casually add comments to packages, classes, methods and 
 %\subsection{Social Coding}
 Social coding is the community-based development of software.
 %
-Social coding sites like GitHub\footnote{https://github.com} and BitBucket\footnote{https://bitbucket.org} enables substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social}.
+Social coding sites like GitHub\footnote{https://github.com} and BitBucket\footnote{https://bitbucket.org} enable substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social}.
 %
 Therefore social coding is a new and promising approach for improving the software development process.
 \section{Approach}
 Social networks like Facebook\footnote{https://facebook.com}, Twitter\footnote{https://twitter.com}, or Stack Overflow\footnote{https://stackoverflow.com} allow to comment on any contend and show happiness about the contend using an "I like" button.
 % 
-We transfer this metaphor to programming by offering develops to comment on any code and to like code snippets in the project using their IDE.  
+We transfer this metaphor to programming by offering developers to comment on any code and to like code snippets in the project using their IDE.  
 %
 Code reviews of large changes (20 files or more) are less useful~\cite{czerwonka2015codereviews}.
 %
@@ -453,19 +453,17 @@ Therefore our approach tries to continuously give feedback just while reading a 
 \section{Walkthrough}
 The developer Alice reads a piece of code relevant to her current issue.
 %
-She does not understand, why [todo] and just adds a comment on this piece of code. 
+She does not understand, why this is done like it is and just adds a comment on this piece of code. 
 %
-Bob did the last change to this code.
-%
-Therefore he gets and email informing him about the comment. 
+Because Bob did the last change to this code, he gets an email informing him about the new comment. 
 %
 He opens the concerned method and answers to the questions. 
 %
-Alice recommends Bob to refactor the code to reveal this intention. 
+Alice recommends Bob to refactor the code to directly reveal this intention.
 %
 He does so and pushes the done button of the comment in order to hide the comment of the discussion. 
 %
-After Alice has finished her issue, Bob enjoys reading her code and therefore pushes the "I like" button of the new method in order to help new developer getting to know the code styles of the project. 
+After Alice has finished her issue, Bob enjoys reading her code and therefore pushes the "I like" button of the new method in order to help new developer getting to know the coding styles of the project. 
 \section{Implementation}
 %Insert meta model here
 We implemented this tool using a client-server architecture. 
