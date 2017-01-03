@@ -13,4 +13,8 @@ class ReviewEntry < ActiveRecord::Base
     return self.create(json_data.slice(:commit_id, :meta_object_hash, :author, :meta_object_type ))
   end
 
+  def to_h
+    Hash[self.attributes.keys.map {|k| [k, self.public_send(k)] }]
+  end
+
 end

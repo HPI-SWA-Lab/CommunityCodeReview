@@ -26,11 +26,19 @@ get '/all' do
 end
 
 get '/comments' do
-  json Comment.all
+  comments = Comment.includes(:review_entry).all
+  comments = comments.map do |each|
+    each.to_h.merge(each.review_entry.to_h)
+  end
+  json comments
 end
 
 get '/likes' do
-  json Like.all
+  likes = Like.includes(:review_entry).all
+  likes = likes.map do |each|
+    each.to_h.merge(each.review_entry.to_h)
+  end
+  json likes
 end
 
 post '/comment' do
