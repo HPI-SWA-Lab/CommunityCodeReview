@@ -9,6 +9,14 @@ require './model/like'
 
 set :database_file, 'config/database.yml'
 
+LOGGER = Logger.new(STDOUT)
+LOGGER.level = Logger::INFO
+
+before :method => :POST do
+  LOGGER.info(request.body.read)
+  request.body.rewind
+end
+
 get '/' do
   'The community code review project is online.'
 end
