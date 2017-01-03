@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161219132445) do
+ActiveRecord::Schema.define(version: 20170103081350) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "content",           default: "", null: false
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20161219132445) do
     t.string "commit_id",        default: "", null: false
     t.string "meta_object_hash", default: "", null: false
     t.string "author",           default: "", null: false
+    t.string "meta_object_type", default: ""
   end
 
 end

@@ -10,7 +10,7 @@ class ReviewEntry < ActiveRecord::Base
   end
 
   def self.createFromJSON(json_data)
-    return self.create(json_data.slice(:commit_id, :meta_object_hash, :author))
+    return self.create(json_data.slice(:commit_id, :meta_object_hash, :author, :meta_object_type ))
   end
 
 end
