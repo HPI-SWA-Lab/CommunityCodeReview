@@ -8,8 +8,6 @@ require './model/comment'
 require './model/like'
 
 set :database_file, 'config/database.yml'
-set :port, 8080
-set :bind, '0.0.0.0'
 
 get '/' do
   'The community code review project is online.'
