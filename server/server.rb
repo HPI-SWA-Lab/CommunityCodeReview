@@ -12,7 +12,7 @@ set :database_file, 'config/database.yml'
 LOGGER = Logger.new(STDOUT)
 LOGGER.level = Logger::INFO
 
-before :method => :POST do
+before :method => :post do
   LOGGER.info(request.body.read)
   request.body.rewind
 end
