@@ -1,11 +1,11 @@
 require 'sinatra'
 require 'sinatra/json'
 require 'sinatra/activerecord'
-require './support'
+require './server/upport'
 
-require './model/review_entry'
-require './model/comment'
-require './model/like'
+require './server/model/review_entry'
+require './server/model/comment'
+require './server/model/like'
 
 set :database_file, 'config/database.yml'
 set :port, 8080
