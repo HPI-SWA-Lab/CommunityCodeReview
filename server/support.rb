@@ -5,6 +5,8 @@ class Hash
   end
 end
 
+# Attribution to:
+# http://stackoverflow.com/questions/15671006/before-filter-for-all-post-requests-in-sinatra
 set(:method) do |method|
   method = method.to_s.upcase
   condition { request.request_method == method }
