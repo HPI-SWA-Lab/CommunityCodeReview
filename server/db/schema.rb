@@ -13,26 +13,23 @@
 ActiveRecord::Schema.define(version: 20170103081350) do
 
   create_table "comments", force: :cascade do |t|
-    t.string   "content",           default: "", null: false
-    t.integer  "parent_comment_id"
-    t.integer  "review_entry_id"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
+    t.string  "content",           default: "", null: false
+    t.integer "parent_comment_id"
+    t.integer "review_entry_id"
     t.index ["review_entry_id"], name: "index_comments_on_review_entry_id"
   end
 
   create_table "likes", force: :cascade do |t|
-    t.integer  "review_entry_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.integer "review_entry_id"
     t.index ["review_entry_id"], name: "index_likes_on_review_entry_id"
   end
 
   create_table "review_entries", force: :cascade do |t|
-    t.string "commit_id",        default: "", null: false
-    t.string "meta_object_hash", default: "", null: false
-    t.string "author",           default: "", null: false
-    t.string "meta_object_type", default: ""
+    t.string  "commit_id",        default: "", null: false
+    t.string  "meta_object_hash", default: "", null: false
+    t.string  "author",           default: "", null: false
+    t.integer "created_at"
+    t.string  "meta_object_type", default: ""
   end
 
 end
