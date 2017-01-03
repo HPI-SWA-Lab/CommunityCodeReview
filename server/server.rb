@@ -7,6 +7,8 @@ require './server/model/review_entry'
 require './server/model/comment'
 require './server/model/like'
 
+config.paths['db'] = ['server/db']
+
 set :database_file, 'config/database.yml'
 set :port, 8080
 set :bind, '0.0.0.0'
