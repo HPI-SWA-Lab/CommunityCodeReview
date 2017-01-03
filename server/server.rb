@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/json'
 require 'sinatra/activerecord'
-require './server/support'
+require './server/upport'
 
 require './server/model/review_entry'
 require './server/model/comment'
