@@ -5,7 +5,6 @@ class CreateComment < ActiveRecord::Migration[5.0]
       table.integer :parent_comment_id, null: true
 
       table.belongs_to :review_entry, index: true
-      table.timestamps
     end
   end
 end

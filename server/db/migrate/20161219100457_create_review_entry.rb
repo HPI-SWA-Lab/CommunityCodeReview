@@ -4,6 +4,7 @@ class CreateReviewEntry < ActiveRecord::Migration[5.0]
       table.string :commit_id, null: false, default: ''
       table.string :meta_object_hash, null: false, default: ''
       table.string :author, null: false, default: ''
+      table.integer :created_at
     end
   end
 end
