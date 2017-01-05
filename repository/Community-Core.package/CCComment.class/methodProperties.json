@@ -1,6 +1,11 @@
 {
 	"class" : {
-		"newWith:" : "TD 12/19/2016 11:05" },
+		"constructFromJson:" : "TD 1/3/2017 14:00",
+		"newWith:" : "TD 12/19/2016 11:05",
+		"newWith:and:and:" : "TD 1/3/2017 12:23",
+		"newWith:forMethod:in:" : "TD 1/3/2017 13:34" },
 	"instance" : {
+		"constructFromJson:" : "TD 1/3/2017 13:59",
+		"selectorToServerKeyMapping" : "TD 1/3/2017 10:02",
 		"text" : "TD 12/13/2016 14:05",
 		"text:" : "TD 12/13/2016 14:05" } }

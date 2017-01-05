@@ -3,14 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"CommentQueue" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"hash",
-		"timestamp",
-		"metaobject",
-		"version" ],
-	"name" : "CCCommentBase",
+		 ],
+	"name" : "CCSeverAPI",
 	"pools" : [
 		 ],
 	"super" : "Object",

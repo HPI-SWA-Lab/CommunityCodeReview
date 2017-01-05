@@ -2,4 +2,5 @@ util
 tearDown
 	super tearDown.
 	
-	CCCommentDictionary methodsDict: temporyDict
+	CCCommentDictionary methodsDict: temporaryCommentDict.
+	CCSeverAPI commentQueue: temporaryCommentQueue

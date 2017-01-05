@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"temporaryCommentDict",
-		"temporaryCommentQueue" ],
-	"name" : "CommunityTestCase",
+		 ],
+	"name" : "CCCommentQueueTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "CommunityTestCase",
 	"type" : "normal" }

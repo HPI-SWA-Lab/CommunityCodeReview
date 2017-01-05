@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"addComment:forMethod:inClass:" : "TD 12/19/2016 13:11",
-		"addCommentForMethod:inClass:" : "TD 12/19/2016 11:51",
+		"addComment:forMethod:inClass:" : "TD 1/3/2017 10:09",
+		"addFromJson:" : "TD 1/3/2017 14:53",
 		"createCommentsForMethod:inClass:" : "TD 12/19/2016 13:11",
 		"displayRatingForMethod:inClass:" : "TD 7/7/2016 16:38",
 		"getCommentsForMethod:inClass:" : "TD 12/19/2016 13:11",
@@ -13,6 +13,8 @@
 		"minusForMethod:inClass:" : "TD 12/19/2016 11:33",
 		"plusForMethod:inClass:" : "td 7/7/2016 15:18",
 		"putRating:forMethod:inClass:" : "TD 12/19/2016 13:11",
+		"queueComment:" : "TD 1/3/2017 10:30",
+		"queueCommentForMethod:inClass:" : "TD 1/3/2017 12:28",
 		"reset" : "TD 12/19/2016 13:13",
 		"resetRationForMethod:inClass:" : "td 7/6/2016 15:20" },
 	"instance" : {

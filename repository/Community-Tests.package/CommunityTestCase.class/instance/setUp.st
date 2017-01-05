@@ -2,5 +2,7 @@ util
 setUp
 	super setUp.
 	
-	temporyDict := CCCommentDictionary methods clone.
-	CCCommentDictionary reset
+	temporaryCommentDict := CCCommentDictionary methodsDict copy.
+	CCCommentDictionary reset.
+	temporaryCommentQueue := CCSeverAPI commentQueue copy.  
+	CCSeverAPI commentQueue: nil

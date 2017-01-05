@@ -1,3 +1,3 @@
 *Community-Core
 addComment
-	CCCommentDictionary addCommentForMethod: self selectedMessageName inClass: self selectedClassOrMetaClass name
+	CCCommentDictionary queueCommentForMethod: self selectedMessageName inClass: self selectedClassOrMetaClass name
