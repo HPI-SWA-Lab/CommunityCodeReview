@@ -437,12 +437,27 @@ The main contribution is a new concept targeting these problems by supporting a 
 It allows developers to casually add comments to packages, classes, methods and method snippets with minimum effort.
 
 \section{Background}
-%\subsection{Social Coding}
+\subsection{Code Review}
+A code review is a systematic examination of source code. 
+%
+Reviews forms range from very informal (e.g. pair programming~\cite{beck2000extreme}) to very formal (e.g. software inspections~\cite{fagan2001design}). 
+%
+Convergent peer reviews are lightweight, flexible processes, that happen early, quickly and frequently~\cite{rigby2013PeerCodeReviews}. 
+%
+Therefore we refer to code reviews as informal peer reviews. 
+%
+ 
+%
+Only about 15\% of the peer review comments point out possible defect~\cite{czerwonka2015codereviews}. 
+%
+Therefore the purpose of reviews change from defect finding to discussions about alternative solutions and long-term code maintainability~\cite{rigby2013PeerCodeReviews, czerwonka2015codereviews}.
+
+\subsection{Social Coding}
 Social coding is the community-based development of software.
 %
 Social coding sites like GitHub\footnote{https://github.com} and BitBucket\footnote{https://bitbucket.org} enable substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social}.
 %
-Therefore social coding is a new and promising approach for improving the software development process.
+Therefore social coding is a new and promising approach for improving the software development process. 
 \section{Approach}
 Social networks like Facebook\footnote{https://facebook.com}, Twitter\footnote{https://twitter.com}, or Stack Overflow\footnote{https://stackoverflow.com} allow to comment on any contend and show happiness about the contend using an "I like" button.
 % 
@@ -469,11 +484,11 @@ After Alice has finished her issue, Bob enjoys reading her code and therefore pu
 
 \section{Design Decisions}
 
-\begin{figure*}[th!]
-\includegraphics[width=\textwidth]{images/Overview.pdf}
+\begin{figure}[t!]
+\includegraphics[width=\columnwidth]{images/Overview.pdf}
 \caption{Overview over the comment model. Each comment references a meta object (e.g. class, method, package) and references a version encoding the state on which it was commented. A comment can consist of textual feedback or a like action or a done action referencing the comment that should be archived.}
 \label{overview}
-\end{figure*}
+\end{figure}
 \subsection{Client-Server-Architecture}
 In order to exchange the comments across the team, a central data storage is needed. 
 %
