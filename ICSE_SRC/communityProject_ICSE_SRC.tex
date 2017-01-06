@@ -451,7 +451,12 @@ Therefore we refer to code reviews as informal peer reviews.
 Only about 15\% of the peer review comments point out possible defect~\cite{czerwonka2015codereviews}. 
 %
 The main activity of reviews changes from defect finding to discussions about alternative solutions and long-term code maintainability~\cite{rigby2013PeerCodeReviews, czerwonka2015codereviews}.
+%
 
+%
+Context switching is one challenge that developers face during code reviews, because they have to understand another issue and stop doing thier current work~\cite{czerwonka2015codereviews, kononenko2016codereviewquality}.
+%
+Switching from one problem space to another reduces developers productivity and should be avoided~\cite{poppendieck2003lean}.
 \subsection{Social Coding}
 Social coding is the community-based development of software.
 %
@@ -555,6 +560,12 @@ It simplifies discussions between distant developers in large organizations or o
 Furthermore, we argue, that using this approach, many source code comment will move out of the code base into the social coding comment database. 
 %
 This keeps the code clean and focused.
+%
+
+%
+Our tool minimizes context switching, because code reviews can be done while reading other code without enforcing to switch tasks. 
+%
+Therefore it integrates well in lean software developement~\cite{poppendieck2003lean} and other agile processes. 
 %
 
 %
