@@ -67,6 +67,7 @@
 
 \usepackage[para]{footmisc}
 \usepackage{url}
+\usepackage{verbatim}
 \usepackage{graphicx}
 
 % Add the compsocconf option for Computer Society conferences.
@@ -450,7 +451,7 @@ Therefore we refer to code reviews as informal peer reviews.
 %
 Only about 15\% of the peer review comments point out possible defect~\cite{czerwonka2015codereviews}. 
 %
-Therefore the purpose of reviews change from defect finding to discussions about alternative solutions and long-term code maintainability~\cite{rigby2013PeerCodeReviews, czerwonka2015codereviews}.
+The main activity of reviews changes from defect finding to discussions about alternative solutions and long-term code maintainability~\cite{rigby2013PeerCodeReviews, czerwonka2015codereviews}.
 
 \subsection{Social Coding}
 Social coding is the community-based development of software.
@@ -467,6 +468,13 @@ Code reviews of large changes (20 files or more) are less useful~\cite{czerwonka
 %
 Therefore our approach tries to continuously give feedback just while reading a piece of code inside the IDE. 
 %
+Figure~\ref{overview} gives an overview over the comment model used in our tool.
+
+\begin{figure}[t!]
+\includegraphics[width=\columnwidth]{images/Overview.pdf}
+\caption{Overview over the comment model. Each comment references a meta object (e.g. class, method, package) and references a version encoding the state on which it was commented. A comment can consist of textual feedback or a like action or a done action referencing the comment that should be archived.}
+\label{overview}
+\end{figure}
 \section{Walkthrough}
 The developer Alice reads a piece of code relevant to her current issue.
 %
@@ -484,11 +492,6 @@ After Alice has finished her issue, Bob enjoys reading her code and therefore pu
 
 \section{Design Decisions}
 
-\begin{figure}[t!]
-\includegraphics[width=\columnwidth]{images/Overview.pdf}
-\caption{Overview over the comment model. Each comment references a meta object (e.g. class, method, package) and references a version encoding the state on which it was commented. A comment can consist of textual feedback or a like action or a done action referencing the comment that should be archived.}
-\label{overview}
-\end{figure}
 \subsection{Client-Server-Architecture}
 In order to exchange the comments across the team, a central data storage is needed. 
 %
@@ -499,8 +502,6 @@ But this enforces users to perform a commit after commenting on source code, whi
 Therefore we implemented this tool using a client-server architecture with. 
 %
 The server manages the comments in a database and the client created, modifies and shows the comments in the IDE. 
-%
-Figure~\ref{overview} gives an overview over the comment model used in our tool.
 \subsection{Hiding Comments using an explicit Done Button}
 Comments that have been discussed and resolved should not be displayed to the developers any more. 
 %
@@ -510,7 +511,13 @@ But this leads to problem when the change does not correspond to the comment (e.
 %
 Many other scenarios could lead to hiding a comment that is still applicable. 
 %
-Therefore we decided to keep all comments until they are explicitly marked as done by one developer.    
+Therefore we decided to keep all comments until they are explicitly marked as done by one developer.  
+\begin{comment}
+\subsection{Identity of Meta Objects}
+In order to connect a comment with a meta object (package, class or method), a reference identifier for these meta objects should be defined. 
+%
+We chose to reference 
+\end{comment}
 \section{Related Work}
 Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE, yu2015pullrequests, tsay2014contributionGithub, gousios2014PullBasedSD, rahman2014pullrequests, tsay2014ContributionDiscussion}. 
 %
@@ -675,8 +682,6 @@ I would like to thank Patrick Rein for his support and the HPI software architec
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-	
-\newpage
 	
 \bibliographystyle{ieeetr}
 \bibliography{IEEEabrv,bibliography}
