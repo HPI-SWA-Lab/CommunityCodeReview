@@ -1,5 +1,5 @@
 ## Core latex/pdflatex auxiliary files:
-*.pdf
+ICSE_SRC/*.pdf
 *.aux
 *.lof
 *.log
