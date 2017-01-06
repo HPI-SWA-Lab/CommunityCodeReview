@@ -1,0 +1,1 @@
+for %%f in (*.svg) do (inkscape -f %%f -A %%~nf.pdf)

@@ -67,6 +67,8 @@
 
 \usepackage[para]{footmisc}
 \usepackage{url}
+\usepackage{graphicx}
+
 % Add the compsocconf option for Computer Society conferences.
 %
 % If IEEEtran.cls has not been installed into the LaTeX system files,
@@ -397,11 +399,11 @@ But usually they happen only once before new code is merged into the main branch
 %
 We preset a concept that helps developers to continuously give feedback on their source code directly in the IDE by using the metaphor of social networks. 
 %
-This reduces context switches for developers, improves the software develop process and even allows to give feedback to library and framework developers. 
+This reduces context switches for developers, improves the software develop process and even allows to give feedback to developers of external libraries and frameworks. 
 \end{abstract}
 
 \begin{IEEEkeywords}
-code reviews; code quality; social coding; feedback;
+code review; code quality; social coding; feedback;
 
 \end{IEEEkeywords}
 
@@ -464,12 +466,36 @@ Alice recommends Bob to refactor the code to directly reveal this intention.
 He does so and pushes the done button of the comment in order to hide the comment of the discussion. 
 %
 After Alice has finished her issue, Bob enjoys reading her code and therefore pushes the "I like" button of the new method in order to help new developer getting to know the coding styles of the project. 
-\section{Implementation}
-%Insert meta model here
-We implemented this tool using a client-server architecture. 
+
+\section{Design Decisions}
+
+\begin{figure*}[th!]
+\includegraphics[width=\textwidth]{images/Overview.pdf}
+\caption{Overview over the comment model. Each comment references a meta object (e.g. class, method, package) and references a version encoding the state on which it was commented. A comment can consist of textual feedback or a like action or a done action referencing the comment that should be archived.}
+\label{overview}
+\end{figure*}
+\subsection{Client-Server-Architecture}
+In order to exchange the comments across the team, a central data storage is needed. 
+%
+One simple solution would be to attach the comments in custom fields of a commit of the version control software. 
+%
+But this enforces users to perform a commit after commenting on source code, which is impossible when the developer has no write access to the coded that was commented. 
+%
+Therefore we implemented this tool using a client-server architecture with. 
 %
 The server manages the comments in a database and the client created, modifies and shows the comments in the IDE. 
 %
+Figure~\ref{overview} gives an overview over the comment model used in our tool.
+\subsection{Hiding Comments using an explicit Done Button}
+Comments that have been discussed and resolved should not be displayed to the developers any more. 
+%
+Our first intuition was, that a comment should be hidden when the method was changed. 
+%
+But this leads to problem when the change does not correspond to the comment (e.g. the comment criticizes the name of a method and a developer adds one call inside the method). 
+%
+Many other scenarios could lead to hiding a comment that is still applicable. 
+%
+Therefore we decided to keep all comments until they are explicitly marked as done by one developer.    
 \section{Related Work}
 Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE, yu2015pullrequests, tsay2014contributionGithub, gousios2014PullBasedSD, rahman2014pullrequests, tsay2014ContributionDiscussion}. 
 %
@@ -499,6 +525,7 @@ Discussions and questions about the source code traditionally are done using mai
 The recent emergence of Q\&A sites introduces gamification of archiving reputation for answering questions~\cite{vasilescu2014QA}.
 %
 But like pull requests, they usually are not done inside the IDE but on a separate StackExchange network like StackOverflow.
+
 \section{Discussion}
 Our approach encourages continuous conversations about source code regarding quality and correctness. 
 %
@@ -608,6 +635,7 @@ Furthermore it is a contribution for the vision of a self-sustaining IDE by prov
 
 
 % use section* for acknowledgement
+
 \section*{Acknowledgment}
 I would like to thank Patrick Rein for his support and the HPI software architecture group for the continous feedback.
 % trigger a \newpage just before the given reference
@@ -633,6 +661,7 @@ I would like to thank Patrick Rein for his support and the HPI software architec
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
 	
+\newpage
 	
 \bibliographystyle{ieeetr}
 \bibliography{IEEEabrv,bibliography}
