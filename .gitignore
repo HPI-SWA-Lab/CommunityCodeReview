@@ -1,5 +1,6 @@
 ## Core latex/pdflatex auxiliary files:
 ICSE_SRC/*.pdf
+Programming_SRC/*.pdf
 *.aux
 *.lof
 *.log
