@@ -20,7 +20,7 @@
 %-----------------------------------------------------------------------------
 
 
-\documentclass[preprint, numbers]{sigplanconf}
+\documentclass[preprint, 10pt, numbers]{sigplanconf}
 
 % The following \documentclass options may be useful:
 
@@ -65,7 +65,7 @@
 %\titlebanner{banner above paper title}        % These are ignored unless
 \preprintfooter{Continuations Code Reviews on any code inside the IDE}   % 'preprint' option specified.
 
-\title{Continous Peer Reviews}
+\title{Continuous Peer Reviews}
 \subtitle{A Social Coding tool for Code Reviews inside the IDE}
 
 \authorinfo{Tobias D{\"u}rschmid}
@@ -79,7 +79,7 @@ Code reviews play an important and successful role in modern software developmen
 %
 But usually they happen only once before new code is merged into the main branch.
 %
-We preset a concept that helps developers to continuously give feedback on their source code directly in the IDE by using the metaphor of social networks. 
+We present a concept that helps developers to continuously give feedback on their source code directly in the IDE by using the metaphor of social networks. 
 %
 This reduces context switches for developers, improves the software develop process and allows to give feedback to developers of external libraries and frameworks. 
 \end{abstract}
@@ -140,7 +140,7 @@ It allows developers to casually add comments to packages, classes, methods and 
 %
 
 %
-Social networks like Facebook\footnote{\url{https://facebook.com}}, Twitter\footnote{\url{https://twitter.com}}, or Stack Overflow\footnote{\url{https://stackoverflow.com}} allow to comment on any contend and show happiness about the contend using an "I like" button.
+Social networks like Facebook\footnote{\url{https://facebook.com}}, Twitter\footnote{\url{https://twitter.com}}, or Stack Overflow\footnote{\url{https://stackoverflow.com}} allow to comment on any content and show happiness about the content using an "I like" button.
 % 
 We transfer this metaphor to programming by offering developers to comment on any code and to like code snippets in the project using their IDE.  
 %
@@ -151,7 +151,7 @@ Therefore our approach tries to continuously give feedback just while reading a 
 Figure~\ref{overview} gives an overview over the comment model used in our tool.
 
 \section{Background}
-\subsection{Code Review}
+%\subsection{Code Review}
 A code review is a systematic examination of source code. 
 %
 Reviews forms range from very informal (e.g. pair programming~\cite{beck2000extreme}) to very formal (e.g. software inspections~\cite{fagan2001design, ackerman1989software}). 
@@ -171,13 +171,14 @@ Only about 15\% of the peer review comments point out possible defect while 50\%
 One challenge developers are facing during code reviews is context switching, because they have to understand another issue and stop doing thier current work~\cite{czerwonka2015codereviews, kononenko2016codereviewquality}.
 %
 Switching from one problem space to another reduces developers productivity and should be avoided~\cite{poppendieck2003lean}.
+\begin{comment}
 \subsection{Social Coding}
 Social coding is the community-based development of software.
 %
 Social coding sites like GitHub\footnote{\url{https://github.com}} and BitBucket\footnote{\url{https://bitbucket.org}} enable substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social}.
 %
 Therefore social coding is a new and promising approach for improving the software development process by encouraging the collaborations in the team.
-
+\end{comment}
 \begin{figure}[t!]
 \includegraphics[width=\columnwidth]{images/Overview.pdf}
 \caption{Overview over the comment model. Each comment references a meta object (e.g. class, method, package) and references a version encoding the state on which it was commented. A comment can consist of textual feedback or a like action or a done action referencing the comment that should be archived.}
@@ -225,7 +226,7 @@ Therefore we propose to use our concept in conjunction with pull requests or	 ot
 \begin{comment}
 
 \section*{Acknowledgment}
-I would like to thank Patrick Rein for his support and the HPI software architecture group for the continous feedback.
+I would like to thank Patrick Rein for his support and the HPI software architecture group for the continuous feedback.
 
 \end{comment}
 
