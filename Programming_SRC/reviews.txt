@@ -1,0 +1,124 @@
+————————
+We “preset” - in the abstract - I think you mean “present”. Also in Section 1, “contend” should be “content”.  
+
+It would be nice if you made it clear that the walkthrough is a hypothetical example of how 2 programmers would use your new tool.  
+
+It would be nice to have a conclusion summarizing the work.  Also, is this work implemented?  I think the idea is very original, but I am a little unclear if the contribution is just the idea. 
+
+————————————
+Continuous Peer Reviews, Durschmid (9/30)
+
+The goal of the work is to allow developers to continuously exchange
+comments about the code they are working with, as part of their normal
+development process.  A methodology supporting this is described.  It is
+not clear whether the approach has been implemented, what are the
+challenges in its design, or how it could be evaluated.
+
+The references are excessively voluminous.  Full conferences for familiar
+conferences such as ICSE, ISBNs, dois, and URLs make the references so
+large that it is hard to find things in them.
+
+Problem and motivation (2/5): The problem addressed is clear and relevant
+to the conference.  However, it is not clear what research issue is being
+addressed.  What questions do we want to answer via the development of this
+tool?
+
+Background and related work (3/5): The background section describes briefly
+how code review is done and the problem of context switching in code
+review.  The latter seems to be a main motivation for the work.  The
+related work provides a good survey of existing code review tools.  Most of
+the related work section, however, is an assessment of the current work,
+rather than a discussion of related work.
+
+Approach and uniqueness (3/10): The approach is only described via a
+walkthrough of how it would be used.  In particular, it is not clear
+whether the approach has been implemented, and there is no discussion of
+how its implementation would be designed.  It is clear that the approach is
+different from existing code review tools.  Indeed, it doesn't seem like a
+code review tool at all, ie something focusing on validating changes, but
+rather a non-intrusive way for developers to get and provide feedback on
+code that they don't understand.
+
+Results and contribution (1/10): Since it is not clear whether anything has
+been implemented and there is no evaluation, there would seem to be no
+results.
+
+————————————
+Continuous Peer Reviews, Durschmid (20/30)
+
+The paper proposes a new approach for reviewing code incrementally
+during development, instead of only before merging new code into the
+main branch of a source tree. The approach enables developers to
+comment on code from within their IDE during their regular
+development.  Such comments result in notifications to the developer
+who was last to change the corresponding code. This original developer
+can then perform code changes, such as refactorings, and provide
+additional comments.  Subsequently, the developer initiating this
+interaction can confirm potential code changes using a mechanism
+reminiscent of social networks ("like button"). In turn, other
+developers are notified who can then learn more about the code base.
+The paper suggests that the proposed incremental code review may
+improve productivity by reducing context switches of developers. It
+also provides more ways in which feedback is provided to other
+developers.
+
+Problem and motivation (5/5):
+
+The paper addresses an important problem: traditional code review does
+not provide continuous feedback and it does not enable new developers
+to ask questions about old code. These are important obstacles to
+higher code quality and software correctness. Many highly relevant
+sources are cited to motivate the problem.
+
+Background and related work (3/5):
+
+The paper does a good job providing the necessary background, backing
+up arguments with a number of highly relevant sources. Related work is
+discussed mostly comprehensively, but I was surprised not to see a
+single IDE mentioned which has traditional code review integrated into
+the IDE. For example, EGerrit
+(https://projects.eclipse.org/proposals/egerrit) provides a set of
+Eclipse plug-ins that offer code review capabilities in the Eclipse
+IDE. Also, there are several code review plugins for Microsoft's
+Visual Studio IDE, including a built-in feature provided
+out-of-the-box.
+
+Approach and uniqueness (7/10):
+
+The approach is described in a way that appears plausible. As its
+unique features I see its way of providing pull-based code reviews,
+rather than traditional, push-based code reviews. It also integrates
+unique approval features inspired by popular social networks, together
+with notification capabilities for improved developer communication.
+However, overall it is unclear how deep the technical contributions of
+the approach are.
+
+Results and contribution (5/10):
+
+The main contribution is a concept with accompanying use cases. It is
+not clear whether aspects of the proposed concept have been
+implemented, and what the plan for future work is.
+
+——————————
+
+T Dürschmid: Continuous Peer Reviews
+
+Problem and motivation      (5p): 4 (yeah, cute, nice to investigate)
+Background and related work (5p): 5 (looks appropriate)
+Approach and uniqueness    (10p): 8 (unique, not sure whether I'd want to use
+                                     it though)
+Results and contribution   (10p): 5 (no results, only idea I belief)
+
+
+Review:
+ - Typo in title "Contin+u+ous"
+ - and inconsistent capitalization
+ - allow to comment on any contend -> content
+ - happiness about the contend -> content
+ - Figure 1 seems not to explain anything of importance. Seems natural.
+   Would be more interested in a screenshot
+ - push vs. pull model metaphor (sec. 4) unclear why is one a push, and the
+   other pull? not intuitive
+ - discussion of using continuous feedback in addition to pull requests is
+   hidden in Related work, seems misplaced. Might be better in
+   summary/conclusion section?
