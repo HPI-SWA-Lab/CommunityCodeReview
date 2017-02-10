@@ -1,0 +1,138 @@
+
+----------------------- REVIEW 1 ---------------------
+PAPER 25
+TITLE Social Coding with Code Reviews inside the IDE
+AUTHORS Tobias Dürschmid
+
+Overall evaluation 1
+
+----------- Overall evaluation ----------- This paper presents an approach to social coding inside IDEs. The idea is to continuously allow developers to exchange comments and discuss issues directly in their IDE, with the goal of disrupting less the developers' workflows, reducing context switches.
+
+While I generally very much like the proposed idea, I had trouble understanding some specifics of the AliceBob example scenario. Why, for instance, implement a notification via email I thought the whole point was not having to leave the IDE Also I don't quite understand how the approach helps with reducing context switches. After all, when Bob gets first notified he has to go (back) to source code he might not have worked on for a long time.
+
+When I read the intro I was thinking that the approach would go into a different direction, allowing users of librariesframeworks annotate comments to those artifacts, which would then directly pop up in the IDEs of those libraries'frameworks' developers. To me this would make more sense, but maybe this is actually meant but the paper was not very clear about it.
+
+A problem I am seeing, and which I find not discussed, is that of matching software components to their developers. This is anything but trivial given the vast amounts of librariesframeworks used in many projects and given the fact that those packages (JARs, etc.) typically don't even provide a link to any sort of repository.
+
+Anyway, I think the overall idea is quite promising. Even if the current idea might not be a top contender for the SRC, I think it would be interesting to further discuss the idea at the conference.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER 25
+TITLE Social Coding with Code Reviews inside the IDE
+AUTHORS Tobias Dürschmid
+
+Overall evaluation -2
+
+----------- Overall evaluation ----------- The paper contributes an idea for associating commentary about code with existing codebase rather than with the code review process. The paper is readable, but there are numerous grammaticalspelling mistakes. As well, there is no evaluation or mention of ongoingfuture evaluation, which for the SRC track puts this paper towards the bottom (all my other papers have preliminary evaluation results).
+
+More specific comments
+
+1. My biggest question is -- why not use the code comments feature that already exists in all major languages It is very strange to me that this is never discussed -- this is a mechanism of code review that already exists and is widely used! For example, developers frequently use ' TODO' and ' FIXME' comments in the code to communicate code issues. There is even support for extractinghighlighting these in Eclipse and other IDEs.
+
+I think that language code comments have several advantage of your approach -- they are part of the code (you say this is a bad thing, but I think it's a huge advantage -- it makes them IDE-independent, you don't need extra infrastructure to maintain them, and they are archived in the same code repo as the code).
+
+
+2. Your idea has numerous challenges, which you do not discuss. Your focus in the paper is on the implementation, but the papers you cite point out the various issues surrounding the code review process. Your proposal brings in new issues. Here are some that I see
+
+- Are your comments actionable It's unclear how one responds to a 'like'; it's ambiguous.
+
+- Do you enforcerequire these comments somehow, as with code reviews
+If not, why would someone bother to spend their time leaving comments
+
+- You briefly mentioned a notification process -- last person to modify code is notified of a comment. This wouldn't work in complex codebases where there are multiple code owners.
+
+
+3. No evaluation or any plans for evaluation. How would you test this system It seems non-trivial to run a user study to evaluate its efficacy without requiring developers to use it (per above point).
+
+
+
+Writing comments
+
+- 'improve the team' - 'improve team'
+
+- 'contend' - 'content'
+
+- 'over the comment' - 'of the comment'
+
+- 'thier' - 'their'
+
+- 'Reviews forms range' - 'Reviews range'
+
+- 'attached by a comment' - 'attached to a comment'
+
+and many more.
+
+Social coding background section not useful; can cut.
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER 25
+TITLE Social Coding with Code Reviews inside the IDE
+AUTHORS Tobias Dürschmid
+
+Overall evaluation 1
+
+----------- Overall evaluation ----------- Summary
+
+The author presents an approach that is aimed at helping developers to continuously give feedback on source code in the IDE. The goal is to reduce context switches for developers, which will ultimately improve the overall development process.
+
+Review
+
+The general idea behind this idea makes sense, and I particularly appreciate the inclusion of a walk-through. My main concern at this point is that it is not entirely clear how the reviewing process is integrated into the IDE. In other words, what is the advantage of this work over the code review as it is implemented in GitHub, for example. Will the author still need to switch tabs in the IDE I would encourage the author to include more on this integration in the paper. If short on space, Figure 1 could probably be removed.
+
+Language
+
+A number of spelling mistakes make the paper unnecessarily difficult to read preset - present, finde - find, dicuss - discuss, contend - content. A simple spell checker would have caught some of these.
+
+
+----------------------- REVIEW 4 ---------------------
+PAPER 25
+TITLE Social Coding with Code Reviews inside the IDE
+AUTHORS Tobias Dürschmid
+
+Overall evaluation -1
+
+----------- Overall evaluation ----------- The author proposes a social coding tool that allows developers to comment on source code within the IDE. The idea is novel and interesting. However, I see a number of concerns that were not addressed in this paper
+
+- Commenting on a piece of code will generate an automatic email to a developer who last changed this code. How you will handle the tracking of code authorshipownership There might be several developers who have touched a certain LOC in the past. All of them will receive a notification email The comment can be relevant to some code change (not necessary the most recent one). 
+
+- Tracking of comments is another challenging area in such social coding model. I almost feel that you would need to provide some sort of version control system for all the comments. From the proposal, it was not clear how comments will be tracked.
+
+- Comment hiding - implementing this feature needs more thought. Developers who are new to the code base might want to be able to see all old comments on a specific methodcode snippet. Removing comments from the code might be against your idea of supporting code comprehension. Also done button is a poor naming for it. 
+
+- You says that your tool aims at giving continuous feedback to the developers while reading code. How exactly that feedback is delivered Simply by the means of comments on the code snippets This was not very clear. 
+
+- It seems that the author has the tool already implemented and ready, yet there are no references citing the tool or author's previous work. Also a better description of the tool, perhaps a screenshot of it would be helpful to include. 
+
+- Feels like Background and Related Work sections are better be merged
+  together. 
+
+- Walkthrough to be renamed as Scenario
+
+- Some relevant references are missing
+P. Story on evolution of social programmer (MSR-12 keynote) Baysal et al. (WCRE-13 or EMSE-15) on factors affecting code review.
+Lotufo (MSR-12) on gamification of bug tracking systems 
+
+Typosgrammar
+
+p.1
+software development process
+contend - content
+awkward phrasing show happiness - express supportapproval
+Review forms
+e.g.,
+code quality [4].
+
+p.2
+Therefore, we decided
+Furthermore, our feedback
+However, a dedicated
+Therefore, we propose
+conversations about source code quality, correctness, ...
+code comments will move
+Therefore, it integrates
+Unfortunately, we
+Therefore, this tool
+Furthermore, it is
+
