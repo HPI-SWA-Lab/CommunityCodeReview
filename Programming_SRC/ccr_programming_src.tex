@@ -103,7 +103,7 @@ Code reviews play an important and successful role in modern software developmen
 %
 But usually they happen only once before new code is merged into the main branch.
 %
-We present a concept that helps developers to continuously give feedback on their source code directly in the integrated development environment (IDE) by using the metaphor of social networks. 
+We present a concept which helps developers to continuously give feedback on their source code directly in the integrated development environment (IDE) by using the metaphor of social networks. 
 %
 This reduces context switches for developers, improves the software develop process and allows to give feedback to developers of external libraries and frameworks. 
 \end{abstract}
@@ -172,7 +172,7 @@ Code reviews of large changes (20 files or more) are less useful~\cite{czerwonka
 %
 Therefore our approach tries to continuously give feedback just while reading a piece of code inside the IDE. 
 %
-Figure~\ref{overview} gives an overview over the comment model used in our tool.
+%Figure~\ref{overview} gives an overview over the comment model used in our tool.
 
 \section{Background}
 \subsection{Code Reviews}
@@ -203,11 +203,13 @@ Social coding sites like GitHub\footnote{\url{https://github.com}} and BitBucket
 %
 Therefore social coding is a new and promising approach for improving the software development process by encouraging the collaborations in the team.
 
+\begin{comment}
 \begin{figure}[t!]
 \includegraphics[width=\columnwidth]{images/Overview.pdf}
 \caption{Overview of our comment model. Each comment references a meta object (e.g. class, method, package) and references a version encoding the state on which it was commented. A comment can consist of textual feedback or a like action or a done action referencing the comment that should be archived.}
 \label{overview}
 \end{figure}
+\end{comment}
 %\newpage
 \section{Walkthrough}
 This section describes a hypothetical scenario, how the proposed tool can be used.
@@ -267,7 +269,7 @@ Furthermore our feedback is continuous and therefore allows new developers to co
 %
 In contrast to existing tools, our concept allows the developers to stay inside their IDE and avoid context switches. 
 %
-This provides a more self-sustaining environment that supports the liveness of the development process. 
+This provides a more self-sustaining environment which supports the liveness of the development process. 
 %
 However a dedicated review process before merging changes into the main branch let the developers focus on issues raised up by the specific changes. 
 %
@@ -281,8 +283,35 @@ The recent emergence of questions \& answers (Q\&A) sites introduces gamificatio
 %
 But like pull requests, they usually are not done inside the IDE but on a separate StackExchange network like StackOverflow.
 
+\section{Discussion}
+Our approach encourages continuous conversations about source code regarding quality, correctness, alternative solutions and other topics. 
+%
+It simplifies discussions between distant developers in large organizations or open source projects by providing a social coding platform which forwards a comment automatically to the author of the concerned code.
+%
+Furthermore, we argue, that using this approach, many source code comment will move out of the code base into the social coding comment database. 
+%
+This keeps the code clean and focused.
+%
 
+%
+Our tool minimizes context switching, because code reviews can be done while reading other code without enforcing to switch tasks. 
+%
+Therefore it integrates well with Lean software developement~\cite{poppendieck2003lean} and other agile processes. 
+%
+
+%
+Unfortunately we did not find any solution how to deal with developers working on the project but not having installed our tool. 
+%
+This could lead to inconsistent states, for examples, when this developer moves a method that is attached by a comment. 
+%
+Therefore this tool does only work correctly if all working developers have installed our tool. 
 \section{Conclusion}
+We proposed a social coding tool which helps developers continuously giving feedback on code quality and potential mistakes.
+%
+This is one contribution for social coding towards a constructive programming society with collective code ownership. 
+%
+Furthermore it is a contribution for the vision of a self-sustaining IDE by providing a tool for code reviews as one important process for code improvements. 
+
 
 \section*{Acknowledgments}
 I would like to thank Patrick Rein for his support and the HPI software architecture group for the continuous feedback.
