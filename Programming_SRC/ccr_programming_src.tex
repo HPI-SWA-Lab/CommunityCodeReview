@@ -103,7 +103,7 @@ Code reviews play an important and successful role in modern software developmen
 %
 But usually they happen only once before new code is merged into the main branch.
 %
-We present a concept that helps developers to continuously give feedback on their source code directly in the IDE by using the metaphor of social networks. 
+We present a concept that helps developers to continuously give feedback on their source code directly in the integrated development environment (IDE) by using the metaphor of social networks. 
 %
 This reduces context switches for developers, improves the software develop process and allows to give feedback to developers of external libraries and frameworks. 
 \end{abstract}
@@ -205,7 +205,7 @@ Therefore social coding is a new and promising approach for improving the softwa
 
 \begin{figure}[t!]
 \includegraphics[width=\columnwidth]{images/Overview.pdf}
-\caption{Overview over the comment model. Each comment references a meta object (e.g. class, method, package) and references a version encoding the state on which it was commented. A comment can consist of textual feedback or a like action or a done action referencing the comment that should be archived.}
+\caption{Overview of our comment model. Each comment references a meta object (e.g. class, method, package) and references a version encoding the state on which it was commented. A comment can consist of textual feedback or a like action or a done action referencing the comment that should be archived.}
 \label{overview}
 \end{figure}
 \newpage
@@ -271,11 +271,18 @@ This provides a more self-sustaining environment that supports the liveness of t
 %
 However a dedicated review process before merging changes into the main branch let the developers focus on issues raised up by the specific changes. 
 %
-Therefore we propose to use our concept in conjunction with pull requests or	 other change-based reviews and not instead of it.
+Therefore we propose to use our concept in conjunction with pull requests or other change-based reviews and not instead of it.
 %
-\\
 
 %
+Discussions and questions about the source code traditionally are done using mailing lists~\cite{vasilescu2014QA}.
+%
+The recent emergence of questions \& answers (Q\&A) sites introduces gamification of archiving reputation for answering questions~\cite{vasilescu2014QA}.
+%
+But like pull requests, they usually are not done inside the IDE but on a separate StackExchange network like StackOverflow.
+
+
+\section{Conclusion}
 
 \section*{Acknowledgments}
 I would like to thank Patrick Rein for his support and the HPI software architecture group for the continuous feedback.
