@@ -148,7 +148,7 @@ This reduces context switches for developers, improves the software develop proc
 \section{Problem and Motivation}
 Performing code reviews is an important practice at professional companies and open source projects~\cite{balachandran2013PeerCodeReviews, bird2015CodeReviewPlatform, rigby2013PeerCodeReviews, czerwonka2015codereviews, rigby2014PeerReviewOSS, feitelson2013development}, because developers want to find defects, improve the code quality, discuss alternative solutions, transfer knowledge, and improve team awareness~\cite{rigby2013PeerCodeReviews, bacchelli2013expectations}.
 %
-Recent studies confirmed, that review coverage and review participation have a significant impact on code quality and the correctness of software~\cite{mcintosh2014impact, thongtanunam2015CodeReviews, shimagaki2016CRInSony}. 
+Recent studies confirmed, that review coverage and review participation have a significant impact on code quality and the correctness of software~\cite{mcintosh2014impact, mcintosh2016empirical, thongtanunam2015CodeReviews, shimagaki2016CRInSony}. 
 %
 
 %
@@ -164,7 +164,7 @@ It allows developers to casually add comments to packages, classes, methods and 
 %
 
 %
-Social networks like Facebook\footnote{\url{https://facebook.com}}, Twitter\footnote{\url{https://twitter.com}}, or Stack Overflow\footnote{\url{https://stackoverflow.com}} allow to comment on any content and show happiness about the content using an "I like" button.
+Social networks like Facebook\footnote{\url{https://facebook.com}}, Twitter\footnote{\url{https://twitter.com}}, or Stack Overflow\footnote{\url{httpsin://stackoverflow.com}} allow to comment on any content and show happiness about the content using an "I like" button.
 % 
 We transfer this metaphor to programming by offering developers to comment on any code and to like code snippets in the project using their IDE.  
 %
@@ -172,7 +172,9 @@ Code reviews of large changes (20 files or more) are less useful~\cite{czerwonka
 %
 Therefore, our approach tries to continuously give feedback just while reading a piece of code inside the IDE. 
 %
-%Figure~\ref{overview} gives an overview over the comment model used in our tool.
+This approach lowers the barrier to comment on source code and increases the amount of feedback.
+%
+This concept can be enriched by applying gamification techniques to commenting on source code and finding bugs~\cite{lotufo2012towards}.
 
 \section{Background}
 \subsection{Code Reviews}
@@ -186,20 +188,21 @@ Therefore, we refer to code reviews as informal peer reviews, also known as mode
 %
  
 %
-Currently the main activity of reviews changes from defect finding to discussions about alternative solutions and long-term code maintainability~\cite{rigby2013PeerCodeReviews, czerwonka2015codereviews}. 
+Currently the main activity of reviews changes from defect finding to discussions about alternative solutions and long-term code maintainability~\cite{rigby2013PeerCodeReviews, czerwonka2015codereviews}.
 %
 Only about 15\% of the peer review comments point out possible defect while 50\% address code quality~\cite{czerwonka2015codereviews}.
 %
+Non-technical factors like reviewer load and activity, author experience and the company structure significantly impact the review outcome~\cite{baysal2013influence, baysal2016investigating}.
 
 %
 One challenge developers are facing during code reviews is context switching, because they have to understand another issue and stop doing their current work~\cite{czerwonka2015codereviews, kononenko2016codereviewquality}.
 %
-Switching from one problem space to another reduces developers productivity and should be avoided~\cite{poppendieck2003lean}.
+Switching from one problem space to another reduces developers productivity and should be avoided~\cite{poppendieck2003lean}. 
 
 \subsection{Social Coding}
 Social coding is the community-based development of software.
 %
-Social coding sites like GitHub\footnote{\url{https://github.com}} and BitBucket\footnote{\url{https://bitbucket.org}} enable substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social}.
+Social coding sites like GitHub\footnote{\url{https://github.com}} and BitBucket\footnote{\url{https://bitbucket.org}} enable substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social, storey2012msr}.
 %
 Therefore, social coding is a new and promising approach for improving the software development process by encouraging the collaborations in the team.
 
@@ -311,7 +314,6 @@ We proposed a social coding tool which helps developers continuously giving feed
 This is one contribution for social coding towards a constructive programming society with collective code ownership. 
 %
 Furthermore, it is a contribution for the vision of a self-sustaining IDE by providing a tool for code reviews as one important process for code improvements. 
-
 
 \section*{Acknowledgments}
 I would like to thank Patrick Rein for his support and the HPI software architecture group for the continuous feedback.
