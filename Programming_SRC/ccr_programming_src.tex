@@ -1,3 +1,5 @@
+% !TeX spellcheck = en_us
+
 %-----------------------------------------------------------------------------
 %
 %               Template for sigplanconf LaTeX Class
@@ -20,7 +22,7 @@
 %-----------------------------------------------------------------------------
 
 
-\documentclass[preprint, 10pt, numbers]{sigplanconf}
+\documentclass[sigconf]{acmart}
 
 % The following \documentclass options may be useful:
 
@@ -31,7 +33,7 @@
 % authorversion  Prepare an author version, with appropriate copyright-space text.
 
 %\usepackage[para]{footmisc}
-
+\usepackage[para]{footmisc}
 \usepackage{natbib,hyperref}
 \usepackage{url}
 \usepackage{verbatim}
@@ -39,16 +41,33 @@
 
 \newcommand{\cL}{{\cal L}}
 
+\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
+% DOI
+%\acmDOI{10.475/123_4}
+
+% ISBN
+%\acmISBN{123-4567-24-567/08/06}
+
+%Conference
+\acmConference[$\langle$Programming$\rangle$ 2017]{International Conference on the Art, Science, and Engineering of Programming}{April 2017}{Brussels, Belgium} 
+\acmYear{2017}
+\copyrightyear{2017}
+
+\acmPrice{15.00}
+
+
 \begin{document}
 
 \special{papersize=8.5in,11in}
 \setlength{\pdfpageheight}{\paperheight}
 \setlength{\pdfpagewidth}{\paperwidth}
 
-\conferenceinfo{CONF'yy}{Month d--d, 20yy, City, ST, Country}
-\copyrightyear{20yy}
-\copyrightdata{978-1-nnnn-nnnn-n/yy/mm}\reprintprice{\$15.00}
-\copyrightdoi{nnnnnnn.nnnnnnn}
 
 % For compatibility with auto-generated ACM eRights management
 % instructions, the following alternate commands are also supported.
@@ -63,17 +82,22 @@
 %\setcopyright{rightsretained}
 
 %\titlebanner{banner above paper title}        % These are ignored unless
-\preprintfooter{Continuations Code Reviews on any code inside the IDE}   % 'preprint' option specified.
+%\preprintfooter{Continuations Code Reviews on any code inside the IDE}   % 'preprint' option specified.
 
 \title{Continuous Peer Reviews}
 \subtitle{A Social Coding tool for Code Reviews inside the IDE}
 
-\authorinfo{Tobias D{\"u}rschmid}
-           {Hasso Plattner Institute}
-           {tobias.duerschmid@student.hpi.de}
-
-\maketitle
-
+\author{Tobias D{\"u}rschmid}
+%\orcid{1234-5678-9012}
+\affiliation{%
+  \institution{Hasso Plattner Institute}
+  \streetaddress{Prof.-Dr.-Helmert-Str. 2-3}
+  %\postcode{14482}
+  \city{14482 Potsdam} 
+  \country{Germany} 
+}
+\email{tobias.duerschmid@student.hpi.de}       
+         
 \begin{abstract}
 Code reviews play an important and successful role in modern software development. 
 %
@@ -105,10 +129,9 @@ This reduces context switches for developers, improves the software develop proc
 </ccs2012>
 \end{CCSXML}
 
-\ccsdesc[500]{Human-centered computing~Collaborative and social computing systems and tools}
-\\
 \ccsdesc[300]{Software and its engineering~Integrated and visual development environments}
 \ccsdesc[100]{Software and its engineering~Collaboration in software development}
+\ccsdesc[500]{Human-centered computing~Collaborative and social computing systems and tools}
 % end generated code
 
 % Legacy 1998 ACM Computing Classification System categories are also
@@ -117,12 +140,13 @@ This reduces context switches for developers, improves the software develop proc
 %\category{D.3.0}{Programming Languages}{General}
 %\category{F.3.2}{Logics and Meanings of Programs}{Semantics of Programming Languages}[Program analysis]
 
-\keywords
-code review, code quality, social coding, feedback
+\keywords{code review, code quality, social coding, feedback}
+
+\maketitle
 
 %\section{Introduction}
 \section{Problem and Motivation}
-Performing code reviews is an important practice at professional companies and open source projects~\cite{balachandran2013PeerCodeReviews, bird2015CodeReviewPlatform, rigby2013PeerCodeReviews, czerwonka2015codereviews}, because developers want to finde defects, improve the code quality, dicuss alternative solutions, transfer knowledge, and improve the team awareness~\cite{rigby2013PeerCodeReviews, bacchelli2013expectations}.
+Performing code reviews is an important practice at professional companies and open source projects~\cite{balachandran2013PeerCodeReviews, bird2015CodeReviewPlatform, rigby2013PeerCodeReviews, czerwonka2015codereviews, rigby2014PeerReviewOSS, feitelson2013development}, because developers want to finde defects, improve the code quality, dicuss alternative solutions, transfer knowledge, and improve the team awareness~\cite{rigby2013PeerCodeReviews, bacchelli2013expectations}.
 %
 Recent studies confirmed, that review coverage and review participation have a significant impact on code quality and the correctness of software~\cite{mcintosh2014impact, thongtanunam2015CodeReviews, shimagaki2016CRInSony}. 
 %
@@ -156,9 +180,9 @@ A code review is a systematic examination of source code.
 %
 Reviews forms range from very informal (e.g. pair programming~\cite{beck2000extreme}) to very formal (e.g. software inspections~\cite{fagan2001design, ackerman1989software}). 
 %
-Convergent peer reviews are predominantly lightweight, flexible processes, that happen early, quickly and frequently~\cite{rigby2013PeerCodeReviews, shimagaki2016CRInSony}. 
+Convergent peer reviews are predominantly lightweight, flexible processes, that happen early, quickly and frequently~\cite{rigby2013PeerCodeReviews, shimagaki2016CRInSony, rigby2012contemporary, rigby2014PeerReviewOSS}. 
 %
-Therefore we refer to code reviews as informal peer reviews. 
+Therefore we refer to code reviews as informal peer reviews, also known as modern code reviews\cite{bacchelli2013expectations, shimagaki2016CRInSony}. 
 %
  
 %
@@ -171,20 +195,25 @@ Only about 15\% of the peer review comments point out possible defect while 50\%
 One challenge developers are facing during code reviews is context switching, because they have to understand another issue and stop doing thier current work~\cite{czerwonka2015codereviews, kononenko2016codereviewquality}.
 %
 Switching from one problem space to another reduces developers productivity and should be avoided~\cite{poppendieck2003lean}.
-\begin{comment}
+
 \subsection{Social Coding}
 Social coding is the community-based development of software.
 %
 Social coding sites like GitHub\footnote{\url{https://github.com}} and BitBucket\footnote{\url{https://bitbucket.org}} enable substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social}.
 %
 Therefore social coding is a new and promising approach for improving the software development process by encouraging the collaborations in the team.
-\end{comment}
+
 \begin{figure}[t!]
 \includegraphics[width=\columnwidth]{images/Overview.pdf}
 \caption{Overview over the comment model. Each comment references a meta object (e.g. class, method, package) and references a version encoding the state on which it was commented. A comment can consist of textual feedback or a like action or a done action referencing the comment that should be archived.}
 \label{overview}
 \end{figure}
+\newpage
 \section{Walkthrough}
+This section describes a hypothetical scenario, how the proposed tool can be used.
+%
+
+%
 The developer Alice reads a piece of code relevant to her current issue.
 %
 She does not understand, why this is done like it is and just adds a comment on this piece of code. 
@@ -198,6 +227,30 @@ Alice recommends Bob to refactor the code to directly reveal this intention.
 He does so and pushes the done button of the comment in order to hide the comment of the discussion. 
 %
 After Alice has finished her issue, Bob enjoys reading her code and therefore pushes the "I like" button of the new method in order to help new developer getting to know the coding styles of the project. 
+
+\section{Main Design Decisions}
+This section describes the design decisions we made during implementation of the tool. 
+
+\subsection{Server-Architecture}
+In order to exchange the comments across the team, a central data storage is needed. 
+%
+One simple solution would be to attach the comments in custom fields of a commit of the version control software. 
+%
+But this enforces users to perform a commit after commenting on source code, which is impossible when the developer has no write access to the coded that was commented. 
+%
+Therefore we implemented this tool using a client-server architecture with. 
+%
+The server manages the comments in a database and the client creates, modifies and shows the comments in the IDE. 
+\subsection{Hiding Comments using an explicit Done Button}
+Comments that have been discussed and resolved should not be displayed to the developers any more. 
+%
+Our first intuition was, that a comment should be hidden when the method was changed. 
+%
+But this leads to problems when the change does not correspond to the comment (e.g. the comment criticizes the name of a method and a developer adds one call inside the method). 
+%
+Many other scenarios could lead to hiding a comment that is still applicable. 
+%
+Therefore we decided to keep all comments until they are explicitly marked as done by one developer.  
 
 \section{Related Work}
 Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE, yu2015pullrequests, tsay2014contributionGithub, gousios2014PullBasedSD, rahman2014pullrequests, tsay2014ContributionDiscussion}. 
@@ -223,14 +276,12 @@ Therefore we propose to use our concept in conjunction with pull requests or	 ot
 \\
 
 %
-\begin{comment}
 
-\section*{Acknowledgment}
+\section*{Acknowledgments}
 I would like to thank Patrick Rein for his support and the HPI software architecture group for the continuous feedback.
 
-\end{comment}
-
-\bibliographystyle{plainnat}
+\newpage
+\bibliographystyle{ACM-Reference-Format}
 \bibliography{bibliography}
 
 \end{document}
