@@ -1,4 +1,4 @@
-% !TeX spellcheck = en_us
+	% !TeX spellcheck = en_us
 
 %-----------------------------------------------------------------------------
 %
@@ -84,7 +84,7 @@
 %\titlebanner{banner above paper title}        % These are ignored unless
 %\preprintfooter{Continuations Code Reviews on any code inside the IDE}   % 'preprint' option specified.
 
-\title{Continuous Peer Reviews}
+\title{Continuous Code Reviews}
 \subtitle{A Social Coding tool for Code Reviews inside the IDE}
 
 \author{Tobias D{\"u}rschmid}
@@ -105,7 +105,7 @@ But usually they happen only once before new code is merged into the main branch
 %
 We present a concept which helps developers to continuously give feedback on their source code directly in the integrated development environment (IDE) by using the metaphor of social networks. 
 %
-This reduces context switches for developers, improves the software develop process and allows to give feedback to developers of external libraries and frameworks. 
+This reduces context switches for developers, improves the software development process and allows to give feedback to developers of external libraries and frameworks. 
 \end{abstract}
 
 % 2012 ACM Computing Classification System (CSS) concepts
@@ -146,35 +146,34 @@ This reduces context switches for developers, improves the software develop proc
 
 %\section{Introduction}
 \section{Problem and Motivation}
-Performing code reviews is an important practice at professional companies and open source projects~\cite{balachandran2013PeerCodeReviews, bird2015CodeReviewPlatform, rigby2013PeerCodeReviews, czerwonka2015codereviews, rigby2014PeerReviewOSS, feitelson2013development}, because developers want to find defects, improve the code quality, discuss alternative solutions, transfer knowledge, and improve team awareness~\cite{rigby2013PeerCodeReviews, bacchelli2013expectations}.
+Performing code reviews is an important practice for professional companies and open source projects~\cite{balachandran2013PeerCodeReviews, bird2015CodeReviewPlatform, rigby2013PeerCodeReviews, czerwonka2015codereviews, rigby2014PeerReviewOSS, feitelson2013development}.
+%
+Reasons are finding defects, improving code quality, discussing alternative solutions, transferring knowledge, and improving team awareness~\cite{rigby2013PeerCodeReviews, bacchelli2013expectations}.
 %
 Recent studies confirmed, that review coverage and review participation have a significant impact on code quality and the correctness of software~\cite{mcintosh2014impact, mcintosh2016empirical, thongtanunam2015CodeReviews, shimagaki2016CRInSony}. 
 %
 
 %
-But traditionally code reviews are done only once before the code is merged into the main branch~\cite{rigby2013PeerCodeReviews}. 
+But traditionally, code reviews are done only once before the code is merged into the main branch~\cite{rigby2013PeerCodeReviews}. 
 %
-This process does not continuously give feedback on code quality (especially of legacy code), does not support questions of new developers concerning existing code and forces the developers to leave their IDE for commenting on code.
-%
-
-%
-The main contribution is a new concept targeting these problems by supporting a community model for source code inside the IDE using the metaphor of social networks.
-%
-It allows developers to casually add comments to packages, classes, methods and method snippets with minimum effort.
+This process does not continuously give feedback on code quality (especially of legacy code), does not support questions of new developers concerning existing code, and forces the developers to leave their IDE for commenting on code.
 %
 
 %
-Social networks like Facebook\footnote{\url{https://facebook.com}}, Twitter\footnote{\url{https://twitter.com}}, or Stack Overflow\footnote{\url{httpsin://stackoverflow.com}} allow to comment on any content and show happiness about the content using an "I like" button.
+Social networks like Facebook\footnote{\url{https://facebook.com}}, Twitter\footnote{\url{https://twitter.com}}, or Stack Overflow\footnote{\url{https://stackoverflow.com}} enable interaction with any content by adding a comment or pushing an "I like" button.
 % 
-We transfer this metaphor to programming by offering developers to comment on any code and to like code snippets in the project using their IDE.  
+We transfer this metaphor to programming by offering developers to comment on any code and to like clean code snippets in the project using their IDE.  
+%
+
 %
 Code reviews of large changes (20 files or more) are less useful~\cite{czerwonka2015codereviews}.
 %
-Therefore, our approach tries to continuously give feedback just while reading a piece of code inside the IDE. 
+Therefore, the proposed tool tries to continuously give feedback just while reading a piece of code inside the IDE. 
 %
 This approach lowers the barrier to comment on source code and increases the amount of feedback.
 %
-This concept can be enriched by applying gamification techniques to commenting on source code and finding bugs~\cite{lotufo2012towards}.
+Furthermore, it can be enriched by applying gamification techniques to commenting on source code and finding bugs~\cite{lotufo2012towards}.
+%
 
 \section{Background}
 \subsection{Code Reviews}
@@ -184,7 +183,7 @@ Reviews range from very informal (e.g., pair programming~\cite{beck2000extreme})
 %
 Convergent peer reviews are predominantly lightweight, flexible processes, that happen early, quickly and frequently~\cite{rigby2013PeerCodeReviews, shimagaki2016CRInSony, rigby2012contemporary, rigby2014PeerReviewOSS}. 
 %
-Therefore, we refer to code reviews as informal peer reviews, also known as modern code reviews\cite{bacchelli2013expectations, shimagaki2016CRInSony}. 
+Therefore, we refer to code reviews as informal peer reviews.
 %
  
 %
@@ -192,17 +191,17 @@ Currently the main activity of reviews changes from defect finding to discussion
 %
 Only about 15\% of the peer review comments point out possible defect while 50\% address code quality~\cite{czerwonka2015codereviews}.
 %
-Non-technical factors like reviewer load and activity, author experience and the company structure significantly impact the review outcome~\cite{baysal2013influence, baysal2016investigating}.
+Non-technical factors like reviewer load and activity, author experience, and the company structure significantly impact the review outcome~\cite{baysal2013influence, baysal2016investigating}.
 
 %
-One challenge developers are facing during code reviews is context switching, because they have to understand another issue and stop doing their current work~\cite{czerwonka2015codereviews, kononenko2016codereviewquality}.
+One challenge developers face during code reviews is context switching, because they have to understand another issue and stop doing their current work~\cite{czerwonka2015codereviews, kononenko2016codereviewquality}.
 %
-Switching from one problem space to another reduces developers productivity and should be avoided~\cite{poppendieck2003lean}. 
+Switching from one problem space to another reduces developers' productivity and should be avoided~\cite{poppendieck2003lean}. 
 
 \subsection{Social Coding}
 Social coding is the community-based development of software.
 %
-Social coding sites like GitHub\footnote{\url{https://github.com}} and BitBucket\footnote{\url{https://bitbucket.org}} enable substantially more collaborations among developers \cite{thung2013github} and shift the focus of interaction to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social, storey2012msr}.
+Social coding sites like GitHub\footnote{\url{https://github.com}} and BitBucket\footnote{\url{https://bitbucket.org}} enable substantially more collaborations among developers \cite{thung2013github} and shift the focus of interactions to individual contributors and their activities with electronic artifacts~\cite{dabbish2012social, storey2012msr}.
 %
 Therefore, social coding is a new and promising approach for improving the software development process by encouraging the collaborations in the team.
 
@@ -221,7 +220,7 @@ This section describes a hypothetical scenario, how the proposed tool can be use
 %
 The developer Alice reads a piece of code relevant to her current issue.
 %
-She does not understand, why this is done like it is and just adds a comment on this piece of code. 
+She does not understand, why this is done like it is and adds a comment on this piece of code. 
 %
 Because Bob did the last change to this code, he gets informed about the new comment by a notification in the IDE and via email. 
 %
@@ -234,16 +233,16 @@ He does so and pushes the done button of the comment in order to hide the commen
 After Alice has finished her issue, Bob enjoys reading her code and therefore pushes the "I like" button of the new method in order to help new developer getting to know the coding styles of the project. 
 
 \section{Main Design Decisions}
-This section describes the design decisions we made during implementation of the tool. 
+This section describes the design decisions we made during implementation of the tool in Squeak, a Smalltalk environment using a Ruby server for exchanging the comments. 
 
 \subsection{Server-Architecture}
 In order to exchange the comments across the team, a central data storage is needed. 
 %
 One simple solution would be to attach the comments in custom fields of a commit of the version control software. 
 %
-But this enforces users to perform a commit after commenting on source code, which is impossible when the developer has no write access to the coded that was commented. 
+But this enforces users to perform a commit after commenting on source code, which is impossible when the developer has no write access to the code that was commented. 
 %
-Therefore, we implemented this tool using a client-server architecture with. 
+Therefore, we implemented this tool using a client-server architecture. 
 %
 The server manages the comments in a database and the client creates, modifies and shows the comments in the IDE. 
 \subsection{Hiding Comments using an explicit Done Button}
@@ -260,13 +259,13 @@ Therefore, we decided to keep all comments until they are explicitly marked as d
 \section{Related Work}
 Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE, yu2015pullrequests, tsay2014contributionGithub, gousios2014PullBasedSD, rahman2014pullrequests, tsay2014ContributionDiscussion}. 
 %
-Tools like CodeFlow~\cite{bird2015CodeReviewPlatform}, Mondrian~\cite{kennedy2006Mondrian}, Gerrit~\cite{google2016gerrit},  Phabricator~\cite{tsotsis2011Phabricator} and ClusterChanges~\cite{barnett2015helpingdevelopers} support these change-based code reviews.
+Tools like CodeFlow~\cite{bird2015CodeReviewPlatform}, Mondrian~\cite{kennedy2006Mondrian}, Gerrit~\cite{google2016gerrit},  Phabricator~\cite{tsotsis2011Phabricator}, and ClusterChanges~\cite{barnett2015helpingdevelopers} support these change-based code reviews.
 %
-In contrast to that, our concept gives feedback on the current state of code. 
+In contrast, our concept gives feedback on the current state of code. 
 %
-The reviews supported by these tools are made using a push model, meaning that developer request reviews, while our tool uses a pull model, meaning that developers can comment on any code.
+The reviews supported by these tools are made using a push model, meaning that developers request reviews, while our tool uses a pull model, meaning that developers can comment on any code without request of the author.
 %
-Hence, our concept allows to comment on library code and framework code and therefore give feedback to the developers of third party software. 
+Hence, our concept allows to comment on library code and framework code and therefore to give feedback to the developers of third party software. 
 %
 Furthermore, our feedback is continuous and therefore allows new developers to comment on old code. 
 %
@@ -274,7 +273,7 @@ In contrast to existing tools, our concept allows the developers to stay inside 
 %
 This provides a more self-sustaining environment which supports the liveness of the development process. 
 %
-However a dedicated review process before merging changes into the main branch let the developers focus on issues raised up by the specific changes. 
+However, a dedicated review process before merging changes into the main branch lets the developers focus on issues raised up by the specific changes. 
 %
 Therefore, we propose to use our concept in conjunction with pull requests or other change-based reviews and not instead of it.
 %
@@ -287,7 +286,7 @@ The recent emergence of questions \& answers (Q\&A) sites introduces gamificatio
 But like pull requests, they usually are not done inside the IDE but on a separate StackExchange network like StackOverflow.
 
 \section{Discussion}
-Our approach encourages continuous conversations about source code quality, correctness, alternative solutions and other topics. 
+Our approach encourages continuous conversations about source code quality, correctness, alternative solutions, and other topics. 
 %
 It simplifies discussions between distant developers in large organizations or open source projects by providing a social coding platform which forwards a comment automatically to the author of the concerned code.
 %
@@ -297,28 +296,27 @@ This keeps the code clean and focused.
 %
 
 %
-Our tool minimizes context switching, because code reviews can be done while reading other code without enforcing to switch tasks. 
+%Our tool minimizes context switching, because code reviews can be done while reading other code without enforcing to switch tasks. 
 %
-Therefore, it integrates well with Lean software developement~\cite{poppendieck2003lean} and other agile processes. 
+%Therefore, it integrates well with Lean software development~\cite{poppendieck2003lean} and other agile processes. 
 %
 
 %
-Unfortunately, we did not find any solution how to deal with developers working on the project but not having installed our tool. 
+Unfortunately, we did not find any solution for dealing with developers working on the project but not having installed our tool. 
 %
 This could lead to inconsistent states, for examples, when this developer moves a method that is attached to a comment. 
 %
-Therefore, this tool does only work correctly if all working developers have installed our tool. 
+Therefore, this tool currently does only work correctly if all working developers have installed our tool. 
 \section{Conclusion}
 We proposed a social coding tool which helps developers continuously giving feedback on code quality and potential mistakes.
 %
-This is one contribution for social coding towards a constructive programming society with collective code ownership. 
+This is one contribution for social coding towards a constructive programming community with collective code ownership. 
 %
 Furthermore, it is a contribution for the vision of a self-sustaining IDE by providing a tool for code reviews as one important process for code improvements. 
 
 \section*{Acknowledgments}
-I would like to thank Patrick Rein for his support and the HPI software architecture group for the continuous feedback.
+I would like to thank Patrick Rein for his support and the HPI software architecture group for the continuous feedback on the project.
 
-\newpage
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{bibliography}
 
