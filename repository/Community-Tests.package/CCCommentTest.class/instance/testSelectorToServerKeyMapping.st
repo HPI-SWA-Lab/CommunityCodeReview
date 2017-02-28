@@ -4,5 +4,5 @@ testSelectorToServerKeyMapping
 	hash := 'testHash'.
 	timestamp := TimeStamp now.
 	comment := CCComment newWith: hash and: timestamp.
-	self assert: (comment selectorToServerKeyMapping isKindOf: Dictionary)
+	self assert: (comment class selectorToServerKeyMapping isKindOf: Dictionary)
 	

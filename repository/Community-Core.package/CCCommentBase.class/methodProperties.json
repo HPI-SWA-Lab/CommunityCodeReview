@@ -1,10 +1,11 @@
 {
 	"class" : {
-		"constructFromJson:" : "TD 1/3/2017 14:45",
-		"newWith:and:" : "TD 12/13/2016 14:34" },
+		"constructFromJson:" : "TD 1/3/2017 15:09",
+		"newWith:and:" : "TD 12/13/2016 14:34",
+		"selectorToServerKeyMapping" : "TD 1/3/2017 15:06" },
 	"instance" : {
 		"appliesTo:" : "TD 12/13/2016 14:50",
-		"asJsonString" : "TD 1/3/2017 10:01",
+		"asJsonString" : "TD 1/3/2017 15:06",
 		"commitID" : "TD 1/3/2017 13:41",
 		"findeMetaobjectClass" : "TD 1/3/2017 14:15",
 		"findeMetaobjectMethod" : "TD 1/3/2017 14:15",
