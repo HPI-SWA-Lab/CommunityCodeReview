@@ -233,7 +233,7 @@ He does so and pushes the done button of the comment in order to hide the commen
 After Alice has finished her issue, Bob enjoys reading her code and therefore pushes the "I like" button of the new method in order to help new developer getting to know the coding styles of the project. 
 
 \section{Main Design Decisions}
-This section describes the design decisions we made during implementation of the tool in Squeak, a Smalltalk environment using a Ruby server for exchanging the comments. 
+This section describes the design decisions we made during implementation of the tool in Squeak, a Smalltalk environment, using a Ruby server for exchanging the comments. 
 
 \subsection{Server-Architecture}
 In order to exchange the comments across the team, a central data storage is needed. 
@@ -259,7 +259,7 @@ Therefore, we decided to keep all comments until they are explicitly marked as d
 \section{Related Work}
 Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE, yu2015pullrequests, tsay2014contributionGithub, gousios2014PullBasedSD, rahman2014pullrequests, tsay2014ContributionDiscussion}. 
 %
-Tools like CodeFlow~\cite{bird2015CodeReviewPlatform}, Mondrian~\cite{kennedy2006Mondrian}, Gerrit~\cite{google2016gerrit},  Phabricator~\cite{tsotsis2011Phabricator}, and ClusterChanges~\cite{barnett2015helpingdevelopers} support these change-based code reviews.
+Tools like CodeFlow~\cite{bird2015CodeReviewPlatform}, Mondrian~\cite{kennedy2006Mondrian}, Gerrit~\cite{google2016gerrit},  Phabricator~\cite{tsotsis2011Phabricator}, ClusterChanges~\cite{barnett2015helpingdevelopers} and the Eclipse plug-in EGerrit\footnote{\url{https://www.eclipse.org/egerrit/}} support these change-based code reviews.
 %
 In contrast, our concept gives feedback on the current state of code. 
 %
@@ -267,9 +267,9 @@ The reviews supported by these tools are made using a push model, meaning that d
 %
 Hence, our concept allows to comment on library code and framework code and therefore to give feedback to the developers of third party software. 
 %
-Furthermore, our feedback is continuous and therefore allows new developers to comment on old code. 
+Furthermore, our feedback is continuous and therefore enables new developers to comment on old code. 
 %
-In contrast to existing tools, our concept allows the developers to stay inside their IDE and avoid context switches. 
+Similar to plug-ins like EGerrit, the proposed tool enables the developers to stay inside their IDE and avoid context switches.
 %
 This provides a more self-sustaining environment which supports the liveness of the development process. 
 %
