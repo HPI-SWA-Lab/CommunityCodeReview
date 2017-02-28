@@ -1,0 +1,16 @@
+{
+	"category" : "Community-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"metaObject",
+		"type",
+		"comments" ],
+	"name" : "CCCommentView",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

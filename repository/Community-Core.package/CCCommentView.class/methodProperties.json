@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"newWith:andType:" : "TD 2/28/2017 14:21" },
+	"instance" : {
+		"addCommentFrame" : "TD 2/28/2017 11:55",
+		"addCommentHeight" : "TD 2/28/2017 11:55",
+		"buildAddCommentWith:in:" : "TD 2/28/2017 11:54",
+		"buildBreadcrubsPaneWith:in:" : "TD 2/28/2017 12:02",
+		"buildBreadcrubsWith:" : "TD 2/28/2017 11:46",
+		"buildCommentListWith:in:" : "TD 2/28/2017 11:54",
+		"buildListMorph" : "TD 2/28/2017 12:08",
+		"buildWith:" : "TD 2/28/2017 11:56",
+		"buttonHeight" : "TD 2/28/2017 10:48",
+		"buttons" : "TD 2/28/2017 11:03",
+		"buttonsForClass" : "TD 2/28/2017 11:04",
+		"buttonsForMethod" : "TD 2/28/2017 11:07",
+		"buttonsForMethodSnippet" : "TD 2/28/2017 12:07",
+		"buttonsFrame" : "TD 2/28/2017 12:01",
+		"comments" : "TD 2/28/2017 11:40",
+		"comments:" : "TD 2/28/2017 11:40",
+		"initializeComments" : "TD 2/28/2017 14:22",
+		"labelString" : "TD 2/28/2017 12:05",
+		"listFrame" : "TD 2/28/2017 11:56",
+		"metaObject" : "TD 2/28/2017 10:07",
+		"metaObject:" : "TD 2/28/2017 10:07",
+		"openClass" : "TD 2/28/2017 12:09",
+		"type" : "TD 2/28/2017 10:57",
+		"type:" : "TD 2/28/2017 10:57" } }
