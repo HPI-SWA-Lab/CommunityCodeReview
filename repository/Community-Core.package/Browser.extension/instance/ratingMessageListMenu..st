@@ -3,7 +3,7 @@ ratingMessageListMenu: aMenu
 	<messageListMenu>
 	^ aMenu addList: #(
 		-
-		('display rating' displayRating)
+		('display comments' displayComments)
 		('plus' votePlus)
 		('comment' addComment)
 		('reset' resetRating)
