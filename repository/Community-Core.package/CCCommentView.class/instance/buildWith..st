@@ -9,5 +9,5 @@ buildWith: builder
 	
 	self buildBreadcrubsPaneWith: builder in: windowSpec.
 	self buildCommentListWith: builder in: windowSpec.
-	self buildAddCommentWith: builder in: windowSpec.
+	self buildAddCommentPanelWith: builder in: windowSpec.
 	^builder build: windowSpec

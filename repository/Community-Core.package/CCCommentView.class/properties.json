@@ -8,7 +8,8 @@
 	"instvars" : [
 		"metaObject",
 		"type",
-		"comments" ],
+		"comments",
+		"commentText" ],
 	"name" : "CCCommentView",
 	"pools" : [
 		 ],

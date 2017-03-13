@@ -1,9 +1,9 @@
 constructors
-newWith: aString forMethod: aMethodName in: aClassName
+newWith: aString forMethod: aMethodName in: aClass
 	| method |
-	method := (Compiler evaluate: aClassName) >> aMethodName asSymbol.
-	^(self newWith: aClassName,'>>#', aMethodName and: TimeStamp now)
+	method := (Compiler evaluate: aClass) >> aMethodName asSymbol.
+	^(self newWith: aClass name,'>>#', aMethodName and: TimeStamp now)
 		text: aString;
 		metaobject: method;
-		version: (CCVersion newForMethod: aMethodName inClass: aClassName);
+		version: (CCVersion newForMethod: aMethodName inClass: aClass name);
 		yourself
