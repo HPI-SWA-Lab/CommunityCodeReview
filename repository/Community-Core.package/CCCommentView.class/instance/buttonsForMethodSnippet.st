@@ -5,4 +5,4 @@ buttonsForMethodSnippet
 			selector to send
 			help message"
 
-	^ self buttonsForMethod, #(('method' browseMethodFull 'view this method in a browser'))
+	^ self buttonsForMethod, #(('method' openPackage 'Open comments of the containing method.'))

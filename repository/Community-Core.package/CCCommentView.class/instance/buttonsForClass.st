@@ -5,10 +5,4 @@ buttonsForClass
 			selector to send
 			help message"
 
-	| aList |
-
-	aList := #(
-	('package'		votePlus 					'vote positive for this method')
-	('class'			openClass 			'add comment for this method')
-	).
-	^ aList
+	^#(('package' openPackage 'Open comments of the containing package.'))

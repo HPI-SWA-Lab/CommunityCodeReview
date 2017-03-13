@@ -1,3 +1,3 @@
 toolbuilder
 labelString
-	^ self metaObject selector
+	^ self metaObject className, ' >> ', self metaObject selector

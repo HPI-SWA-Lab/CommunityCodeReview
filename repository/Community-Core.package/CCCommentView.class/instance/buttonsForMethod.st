@@ -5,4 +5,4 @@ buttonsForMethod
 			selector to send
 			help message"
 
-	^ self buttonsForClass, #(('method' browseMethodFull 'view this method in a browser'))
+	^ self buttonsForClass, #(('class' openClass 'Open comments of the containing class.'))
