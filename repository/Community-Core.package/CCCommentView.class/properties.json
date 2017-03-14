@@ -9,7 +9,8 @@
 		"metaObject",
 		"type",
 		"comments",
-		"commentText" ],
+		"commentText",
+		"commentUIContainer" ],
 	"name" : "CCCommentView",
 	"pools" : [
 		 ],
