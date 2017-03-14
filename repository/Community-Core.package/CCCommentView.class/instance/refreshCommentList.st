@@ -3,5 +3,4 @@ refreshCommentList
 	
 	commentUIContainer removeAllMorphs.
 	self initializeComments.
-	self comments do: [ :aComment | commentUIContainer addMorphBack: (TextMorph new contents: aComment text)].
-	
+	self comments do: [ :aComment | commentUIContainer addMorphBack: (self textMorphForComment: aComment)]

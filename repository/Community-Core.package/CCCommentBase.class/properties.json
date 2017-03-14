@@ -9,7 +9,8 @@
 		"hash",
 		"timestamp",
 		"metaobject",
-		"version" ],
+		"version",
+		"metaobjectType" ],
 	"name" : "CCCommentBase",
 	"pools" : [
 		 ],

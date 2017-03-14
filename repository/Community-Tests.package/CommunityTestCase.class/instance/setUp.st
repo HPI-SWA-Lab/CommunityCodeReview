@@ -4,5 +4,5 @@ setUp
 	
 	temporaryCommentDict := CCCommentDictionary methodsDict copy.
 	CCCommentDictionary reset.
-	temporaryCommentQueue := CCSeverAPI commentQueue copy.  
-	CCSeverAPI commentQueue: nil
+	temporaryCommentQueue := CCServerAPI commentQueue copy.  
+	CCServerAPI commentQueue: nil

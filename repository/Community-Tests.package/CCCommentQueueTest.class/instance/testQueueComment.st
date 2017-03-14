@@ -4,4 +4,4 @@ testQueueComment
 	| comment |
 	comment := CCComment newWith: 'text'.
 	CCCommentDictionary queueComment: comment.
-	self assert: (CCSeverAPI commentQueue includes: comment)
+	self assert: (CCServerAPI commentQueue includes: comment)

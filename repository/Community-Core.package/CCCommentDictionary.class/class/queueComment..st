@@ -1,4 +1,4 @@
 protocol
 queueComment: aComment
 	
-	CCSeverAPI commentQueue add: aComment
+	CCServerAPI commentQueue add: aComment
