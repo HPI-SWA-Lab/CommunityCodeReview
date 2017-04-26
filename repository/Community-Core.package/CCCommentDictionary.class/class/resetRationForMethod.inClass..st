@@ -1,5 +1,5 @@
 protocol
 resetRationForMethod: aMethodName inClass: aClassName
 	| newRating |
-	newRating := Rating new.
+	newRating := CCRating new.
 	self putRating: newRating forMethod: aMethodName inClass: aClassName

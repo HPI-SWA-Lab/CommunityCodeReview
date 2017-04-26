@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "MinusVoting",
+		"timestamp" ],
+	"name" : "CCVoting",
 	"pools" : [
 		 ],
-	"super" : "Voting",
+	"super" : "Object",
 	"type" : "normal" }

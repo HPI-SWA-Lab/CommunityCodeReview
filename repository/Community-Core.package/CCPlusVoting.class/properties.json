@@ -4,13 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "TD 7/7/2016 15:27",
+	"commentStamp" : "",
 	"instvars" : [
-		"numberOfPlus",
-		"numberOfMinus",
-		"votings" ],
-	"name" : "Rating",
+		 ],
+	"name" : "CCPlusVoting",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "CCVoting",
 	"type" : "normal" }

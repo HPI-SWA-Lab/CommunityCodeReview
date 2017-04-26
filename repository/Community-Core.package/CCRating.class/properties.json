@@ -4,10 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "TD 7/7/2016 15:27",
 	"instvars" : [
-		"timestamp" ],
-	"name" : "Voting",
+		"numberOfPlus",
+		"numberOfMinus",
+		"votings" ],
+	"name" : "CCRating",
 	"pools" : [
 		 ],
 	"super" : "Object",

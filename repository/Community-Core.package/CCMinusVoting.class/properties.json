@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "PlusVoting",
+	"name" : "CCMinusVoting",
 	"pools" : [
 		 ],
-	"super" : "Voting",
+	"super" : "CCVoting",
 	"type" : "normal" }
