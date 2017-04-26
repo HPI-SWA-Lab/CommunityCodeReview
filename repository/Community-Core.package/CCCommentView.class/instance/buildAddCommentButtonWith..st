@@ -10,4 +10,5 @@ buildAddCommentButtonWith: builder
 		action: #addComment;
 		frame: self addCommentButtonFrame;
 		help: 'Add comment'.
+		
 	^buttonSpec

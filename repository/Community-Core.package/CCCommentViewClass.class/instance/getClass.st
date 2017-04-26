@@ -1,3 +1,4 @@
 toolbuilder
 getClass
+
 	^ self metaObject

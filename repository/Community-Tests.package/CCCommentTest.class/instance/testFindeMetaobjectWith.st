@@ -4,5 +4,5 @@ testFindeMetaobjectWith
 	
 	comment := CCComment new. 
 	comment targetHash: 'Object>>#asList'.
-	comment findeMetaobjectWith: #CompiledMethod.
+	comment findMetaobjectWith: #CompiledMethod.
 	self assert: CompiledMethod equals: comment metaobject class

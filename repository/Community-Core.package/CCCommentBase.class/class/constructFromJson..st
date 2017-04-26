@@ -7,8 +7,9 @@ constructFromJson: j
 	^ self new
 			timestamp: timestamp; 
 			targetHash: (j at: (self selectorToServerKeyMapping at: #targetHash));
-			findeMetaobjectWith: (j at: (self selectorToServerKeyMapping at: #metaobjectType));
+			findMetaobjectWith: (j at: (self selectorToServerKeyMapping at: #metaobjectType));
 			version: (CCVersion fromUUID: (j at: (self selectorToServerKeyMapping at: #commitID))); 
 			author: (j at: (self selectorToServerKeyMapping at: #author)); 
 			metaobjectType: (j at: (self selectorToServerKeyMapping at: #metaobjectType)) asSymbol;
+			sourceCode: (j at: (self selectorToServerKeyMapping at: #sourceCode) asSymbol);
 			yourself

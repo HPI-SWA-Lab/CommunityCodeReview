@@ -4,4 +4,4 @@ testFindeMetaobjectClass
 	
 	comment := CCComment new. 
 	comment targetHash: 'Object'.
-	self assert: (comment findeMetaobjectMethod isKindOf: Class)
+	self assert: (comment findMetaobjectMethod isKindOf: Class)

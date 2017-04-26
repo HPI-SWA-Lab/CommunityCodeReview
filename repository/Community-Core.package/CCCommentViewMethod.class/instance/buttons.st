@@ -1,4 +1,4 @@
 toolbuilder
 buttons
 
-	^ self buttonsForMethod
+	^ self buttonsForClass , #(('class' openClass 'Open comments of the containing class.'))

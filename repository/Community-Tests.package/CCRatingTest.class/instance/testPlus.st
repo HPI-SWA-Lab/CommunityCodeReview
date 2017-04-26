@@ -2,7 +2,7 @@ testing
 testPlus
 	|rating |
 
-	rating := Rating new.
+	rating := CCRating new.
 
 	self assertRating: rating equalsPlus: 0 minus: 0.
 	

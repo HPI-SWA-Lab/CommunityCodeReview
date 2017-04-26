@@ -2,7 +2,7 @@ testing
 testReset
 	|rating|
 	
-	rating := Rating new.
+	rating := CCRating new.
 	rating
 		plus; 
 		plus;
