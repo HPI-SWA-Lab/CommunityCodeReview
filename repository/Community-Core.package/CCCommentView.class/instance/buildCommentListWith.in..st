@@ -6,7 +6,8 @@ buildCommentListWith: builder in: windowSpec
 	listSpec 
 		model: self;
 		morph: self buildListMorph;
-		frame: self listFrame.
+		frame: self listFrame;
+		hScrollBarPolicy: #never.
 		
 	windowSpec children add: listSpec.
 	^windowSpec
