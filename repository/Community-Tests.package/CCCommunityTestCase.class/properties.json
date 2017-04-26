@@ -8,7 +8,7 @@
 	"instvars" : [
 		"temporaryCommentDict",
 		"temporaryCommentQueue" ],
-	"name" : "CommunityTestCase",
+	"name" : "CCCommunityTestCase",
 	"pools" : [
 		 ],
 	"super" : "TestCase",

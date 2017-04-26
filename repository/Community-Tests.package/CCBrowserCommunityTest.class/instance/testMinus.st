@@ -5,7 +5,7 @@ testMinus
 	methodName := 'testMinus'. 
 	class := self class name.
 
-	browser := BrowserCommunityFakeObject fullOnClass: self class selector: methodName.
+	browser := CCBrowserCommunityFakeObject fullOnClass: self class selector: methodName.
 	
 	oldMinus := (CCCommentDictionary getRatingForMethod: methodName inClass: class) numberOfMinus.
 	oldPlus := (CCCommentDictionary getRatingForMethod: methodName inClass: class) numberOfPlus.

@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "RatingTest",
+	"name" : "CCRatingTest",
 	"pools" : [
 		 ],
-	"super" : "CommunityTestCase",
+	"super" : "CCCommunityTestCase",
 	"type" : "normal" }

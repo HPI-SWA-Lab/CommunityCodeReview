@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "BrowserCommunityFakeObject",
+		"browser",
+		"previouslyOpenedBrowsers" ],
+	"name" : "CCBrowserCommunityTest",
 	"pools" : [
 		 ],
-	"super" : "Browser",
+	"super" : "CCCommunityTestCase",
 	"type" : "normal" }

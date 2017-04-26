@@ -5,7 +5,7 @@ testResetRating
 	methodName := 'testResetRating'. 
 	class := self class name.
 
-	browser := BrowserCommunityFakeObject fullOnClass: self class selector: methodName.
+	browser := CCBrowserCommunityFakeObject fullOnClass: self class selector: methodName.
 	
 	browser votePlus.
 	self denyRatingForMethod: methodName inClass: class equalsPlus: 0 minus: 0.
