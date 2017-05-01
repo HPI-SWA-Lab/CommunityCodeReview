@@ -3,7 +3,7 @@ addComment
 	
 	CCCommentDictionary 
 		queueCommentForMethod: self metaObject selector 
-		inClass: self metaObject methodClass 
+		inClass: self getClass
 		withText: self commentText string
 		by: Utilities authorInitials 
 		withSourcecode: self metaObject getSource.

@@ -1,4 +1,4 @@
 toolbuilder
 buttonsForClass
 
-	^ #(('package' openPackage 'Open comments of the containing package.'))
+	^ #(('Done' markDone 'Mark the discussion as done') ('Package' openPackage 'Open comments of the containing package.'))

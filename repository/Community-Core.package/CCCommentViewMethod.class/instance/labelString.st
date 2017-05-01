@@ -1,4 +1,4 @@
 toolbuilder
 labelString
 
-	^ self metaObject methodClass name, ' >> ', self metaObject selector
+	^ self buildLabelString: self metaObject methodClass name, ' >> ', self metaObject selector
