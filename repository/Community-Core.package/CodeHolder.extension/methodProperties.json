@@ -3,7 +3,9 @@
 		 },
 	"instance" : {
 		"addComment" : "TD 3/13/2017 19:30",
-		"displayComments" : "TD 3/13/2017 18:39",
+		"displayComments" : "TD 5/1/2017 13:15",
+		"displayCommentsForClass" : "TD 5/1/2017 13:17",
+		"displayCommentsForMethod" : "TD 5/1/2017 13:17",
 		"displayRating" : "TD 12/19/2016 11:31",
 		"resetRating" : "TD 12/19/2016 11:31",
 		"voteMinus" : "TD 12/19/2016 11:31",

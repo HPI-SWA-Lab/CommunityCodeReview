@@ -17,6 +17,7 @@
 		"putRating:forMethod:inClass:" : "TD 12/19/2016 13:11",
 		"queueComment:" : "TD 5/1/2017 11:54",
 		"queueCommentForClass:withText:" : "TD 3/19/2017 13:52",
+		"queueCommentForClass:withText:by:" : "TD 5/1/2017 13:08",
 		"queueCommentForMethod:inClass:" : "TD 3/13/2017 19:29",
 		"queueCommentForMethod:inClass:withText:" : "TD 3/14/2017 11:32",
 		"queueCommentForMethod:inClass:withText:by:withSourcecode:" : "pre 4/26/2017 13:27",
