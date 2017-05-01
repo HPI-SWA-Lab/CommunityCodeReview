@@ -1,4 +1,4 @@
-*Community-Core
+menu
 displayCommentsForMethod
 	| method |
 	method := (Compiler evaluate: self selectedClassOrMetaClass) >> (self selectedMessageName asSymbol).

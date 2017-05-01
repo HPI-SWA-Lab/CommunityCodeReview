@@ -1,10 +1,10 @@
-*Community-Core
+menu
 ratingMessageListMenu: aMenu
 	<messageListMenu>
 	^ aMenu addList: #(
 		-
 		('display comments' displayComments)
-		('plus' votePlus)
+		('I like' votePlus)
 		('comment' addComment)
 		('reset' resetRating)
 		- );

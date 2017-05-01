@@ -1,4 +1,4 @@
-*Community-Core
+menu
 displayClassComments
 	
 	| class |

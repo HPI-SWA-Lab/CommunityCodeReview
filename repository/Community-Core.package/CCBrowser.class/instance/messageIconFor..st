@@ -1,4 +1,4 @@
-as yet unclassified
+menu
 messageIconFor: aSelector 
 
 	| comments |

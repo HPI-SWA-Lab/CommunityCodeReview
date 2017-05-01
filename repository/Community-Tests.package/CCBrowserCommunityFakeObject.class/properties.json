@@ -10,5 +10,5 @@
 	"name" : "CCBrowserCommunityFakeObject",
 	"pools" : [
 		 ],
-	"super" : "Browser",
+	"super" : "CCBrowser",
 	"type" : "normal" }

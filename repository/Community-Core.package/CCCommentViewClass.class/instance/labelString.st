@@ -1,4 +1,4 @@
 toolbuilder
 labelString
 
-	^ self buildLabelString: self metaObject name
+	^ self buildLabelString: super labelString, self metaObject name
