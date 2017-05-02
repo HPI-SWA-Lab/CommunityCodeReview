@@ -1,4 +1,4 @@
 toolbuilder
 getLikes
 
-	^(CCCommentDictionary getRatingForMethod: self metaObject selector inClass: self getClass name) numberOfPlus
+	^(CCCommentDictionary getRatingForClass: self getClass name) numberOfPlus
