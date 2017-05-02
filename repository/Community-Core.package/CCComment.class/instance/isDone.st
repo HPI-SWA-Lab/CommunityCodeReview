@@ -1,3 +1,3 @@
 accessing
 isDone 
-	^ self text == self doneText
+	^ self text = self doneText

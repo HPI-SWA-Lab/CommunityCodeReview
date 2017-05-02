@@ -7,8 +7,8 @@ optionalButtonPairs
 
 	| aList |
 
-	aList := #(
-	('I like'				votePlus 					'vote positive for this method')
-	('comments' 	     displayComments      'display comments for this method')).
+	aList := {
+	{(UiSilkIcons thumbUpIcon asMorph)	.		#votePlus 	.				'vote positive for this method' . Color gray}.
+	{'comments'. #displayComments. 'display comments for this method'}}.
 
 	^ aList , super optionalButtonPairs
