@@ -6,9 +6,8 @@
 		 ],
 	"commentStamp" : "TD 7/7/2016 15:27",
 	"instvars" : [
-		"numberOfPlus",
-		"numberOfMinus",
-		"votings" ],
+		"votings",
+		"targetHash" ],
 	"name" : "CCRating",
 	"pools" : [
 		 ],

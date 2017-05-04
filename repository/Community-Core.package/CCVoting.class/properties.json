@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"timestamp" ],
+		 ],
 	"name" : "CCVoting",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "CCCommentBase",
 	"type" : "normal" }

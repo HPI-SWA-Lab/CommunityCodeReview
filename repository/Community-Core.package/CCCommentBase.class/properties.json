@@ -10,7 +10,6 @@
 		"author",
 		"timestamp",
 		"metaobject",
-		"version",
 		"metaobjectType",
 		"sourceCode" ],
 	"name" : "CCCommentBase",
