@@ -5,5 +5,4 @@ newWith: aString forClass: aClass
 		sourceCode: aClass definition;
 		text: aString;
 		metaobject: aClass;
-		version: (CCVersion newForClass: aClass name);
 		yourself
