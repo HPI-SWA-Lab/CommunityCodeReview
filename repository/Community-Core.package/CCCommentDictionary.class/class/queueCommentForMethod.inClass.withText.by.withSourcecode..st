@@ -3,5 +3,5 @@ queueCommentForMethod: aMethodName inClass: aClass withText: aString by: anAutho
 	
 	| comment |
 	comment := CCComment newWith: aString forMethod: aMethodName in: aClass by: anAuthor with: sourceCode.
-	CCServerAPI commentQueue add: comment.
+	self queueComment: comment.
 	self addComment: comment forMethod: aMethodName inClass: aClass name

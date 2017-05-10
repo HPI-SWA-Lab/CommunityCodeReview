@@ -1,4 +1,4 @@
 synchronization
 delay
 
-	^ 5 minutes
+	^ 1 minutes
