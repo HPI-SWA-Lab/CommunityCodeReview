@@ -11,8 +11,9 @@
 		"newWith:forMethod:in:" : "TD 3/13/2017 19:28",
 		"newWith:forMethod:in:by:with:" : "pre 4/26/2017 13:27",
 		"newWith:forPackage:by:" : "TD 5/2/2017 16:57",
-		"selectorToServerKeyMapping" : "TD 5/4/2017 09:48" },
+		"selectorToServerKeyMapping" : "TD 5/10/2017 08:36" },
 	"instance" : {
+		"=" : "TD 5/10/2017 07:54",
 		"doneText" : "TD 5/1/2017 12:20",
 		"isDone" : "TD 5/2/2017 15:30",
 		"text" : "TD 12/13/2016 14:05",

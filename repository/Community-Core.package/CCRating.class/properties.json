@@ -7,7 +7,8 @@
 	"commentStamp" : "TD 7/7/2016 15:27",
 	"instvars" : [
 		"votings",
-		"targetHash" ],
+		"targetHash",
+		"metaobjectType" ],
 	"name" : "CCRating",
 	"pools" : [
 		 ],

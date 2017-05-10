@@ -2,12 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addVoting:" : "TD 5/10/2017 08:16",
 		"initialize" : "TD 7/13/2016 14:45",
+		"metaobjectType" : "TD 5/10/2017 08:22",
+		"metaobjectType:" : "TD 5/10/2017 08:22",
 		"minus" : "pre 4/26/2017 13:10",
 		"minusVotings" : "TD 7/13/2016 14:46",
 		"numberOfMinus" : "TD 7/13/2016 14:47",
 		"numberOfPlus" : "TD 7/13/2016 14:47",
-		"plus" : "TD 5/4/2017 09:37",
+		"plus" : "TD 5/10/2017 08:33",
 		"plusVotings" : "TD 7/13/2016 14:46",
 		"reset" : "TD 7/13/2016 14:44",
 		"targetHash" : "TD 5/4/2017 09:33",
