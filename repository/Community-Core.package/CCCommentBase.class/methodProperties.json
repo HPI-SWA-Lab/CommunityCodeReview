@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"constructFromJson:" : "TD 5/10/2017 07:46",
+		"constructFromJson:" : "pre 5/10/2017 17:24",
 		"newWith:and:" : "TD 12/13/2016 14:34",
 		"newWith:and:by:" : "TD 3/14/2017 10:41",
 		"selectorToServerKeyMapping" : "TD 5/10/2017 08:36" },
@@ -28,4 +28,4 @@
 		"targetHash:" : "TD 12/13/2016 14:32",
 		"timestamp" : "TD 12/13/2016 14:05",
 		"timestamp:" : "TD 12/13/2016 14:05",
-		"unixTimestamp" : "TD 1/3/2017 14:06" } }
+		"unixTimestamp" : "pre 5/10/2017 17:30" } }

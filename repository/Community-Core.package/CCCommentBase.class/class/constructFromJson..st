@@ -3,7 +3,8 @@ constructFromJson: j
 
 	| timestamp |
 	timestamp := TimeStamp fromSeconds: (j at: (self selectorToServerKeyMapping at: #unixTimestamp)). 
-	timestamp := timestamp plusSeconds: DateAndTime unixEpoch.
+	timestamp := timestamp plusSeconds: DateAndTime unixEpoch asSeconds.
+
 	^ self new
 			timestamp: timestamp; 
 			targetHash: (j at: (self selectorToServerKeyMapping at: #targetHash));

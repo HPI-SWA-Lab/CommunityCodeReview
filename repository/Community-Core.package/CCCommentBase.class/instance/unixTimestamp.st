@@ -1,3 +1,3 @@
 accessing
 unixTimestamp
-	^ self timestamp asUnixTime
+	^ self timestamp asUTC asUnixTime
