@@ -8,5 +8,4 @@ newWith: aString forMethod: aMethodName in: aClass by: anAuthor with: sourceCode
 		sourceCode: sourceCode;
 		text: aString;
 		metaobject: method;
-		version: (CCVersion newForMethod: aMethodName inClass: aClass name);
 		yourself
