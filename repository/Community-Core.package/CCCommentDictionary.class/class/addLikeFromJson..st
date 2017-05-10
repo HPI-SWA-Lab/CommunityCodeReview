@@ -1,4 +1,4 @@
 accessing
 addLikeFromJson: j
 	
-	self addLike: (CCComment constructFromJson: j)
+	self addLike: (CCPlusVoting constructFromJson: j)

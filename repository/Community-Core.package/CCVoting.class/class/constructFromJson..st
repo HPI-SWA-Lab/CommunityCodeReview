@@ -7,5 +7,6 @@ constructFromJson: j
 	^ self new
 			timestamp: timestamp; 
 			targetHash: (j at: (self selectorToServerKeyMapping at: #targetHash));
+			metaobjectType: (j at: (self selectorToServerKeyMapping at: #metaobjectType));
 			author: (j at: (self selectorToServerKeyMapping at: #author)); 
 			yourself
