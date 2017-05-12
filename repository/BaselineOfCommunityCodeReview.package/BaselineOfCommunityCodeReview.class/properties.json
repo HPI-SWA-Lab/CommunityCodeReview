@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfCommunityCodeReview",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfCommunityCodeReview",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
