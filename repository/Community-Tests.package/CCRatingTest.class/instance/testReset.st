@@ -5,10 +5,9 @@ testReset
 	rating := CCRating new.
 	rating
 		plus; 
-		plus;
-		minus.
+		plus.
 
-	self assertRating: rating equalsPlus: 2 minus: 1.
+	self assertRating: rating equalsPlus: 2.
 	
 	rating reset.
-	self assertRating: rating equalsPlus: 0 minus: 0.
+	self assertRating: rating equalsPlus: 0.

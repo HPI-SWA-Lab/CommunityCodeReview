@@ -4,10 +4,10 @@ testPlus
 
 	rating := CCRating new.
 
-	self assertRating: rating equalsPlus: 0 minus: 0.
+	self assertRating: rating equalsPlus: 0.
 	
 	rating plus.	
-	self assertRating: rating equalsPlus: 1 minus: 0.
+	self assertRating: rating equalsPlus: 1.
 	
 	rating plus.	
-	self assertRating: rating equalsPlus: 2 minus: 0
+	self assertRating: rating equalsPlus: 2

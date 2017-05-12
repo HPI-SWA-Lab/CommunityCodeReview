@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assertRating:equalsPlus:minus:" : "TD 7/7/2016 15:38",
-		"assertRatingForMethod:inClass:equalsPlus:minus:" : "TD 12/19/2016 11:30",
-		"denyRating:equalsPlus:minus:" : "TD 7/7/2016 16:34",
-		"denyRatingForMethod:inClass:equalsPlus:minus:" : "TD 12/19/2016 11:30",
+		"assertRating:equalsPlus:" : "pre 5/12/2017 10:58",
+		"assertRatingForMethod:inClass:equalsPlus:" : "pre 5/12/2017 10:59",
+		"denyRating:equalsPlus:" : "pre 5/12/2017 11:00",
+		"denyRatingForMethod:inClass:equalsPlus:" : "pre 5/12/2017 11:02",
 		"setUp" : "TD 3/14/2017 11:14",
 		"tearDown" : "TD 3/14/2017 11:16" } }
