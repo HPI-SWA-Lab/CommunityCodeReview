@@ -1,5 +1,5 @@
 accessing
 queueVoting: aVoting
 
-	self votingQueue add: aVoting
+	self votingQueue nextPut: aVoting
 	

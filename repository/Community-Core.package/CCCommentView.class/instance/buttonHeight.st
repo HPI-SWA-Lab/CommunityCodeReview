@@ -1,3 +1,3 @@
 toolbuilder
 buttonHeight
-	^ 40
+	^ 25

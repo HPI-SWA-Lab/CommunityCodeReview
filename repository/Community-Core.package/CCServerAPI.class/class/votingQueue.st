@@ -1,4 +1,5 @@
 accessing
 votingQueue
-	VotingQueue ifNil: [VotingQueue := OrderedCollection new].
+	
+	VotingQueue ifNil: [VotingQueue := SharedQueue2 new].
 	^ VotingQueue

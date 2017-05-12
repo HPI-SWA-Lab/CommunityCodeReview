@@ -1,4 +1,9 @@
 as yet unclassified
 uploadLikes
 
-	self class votingQueue: (self class votingQueue reject: [ :voting | self uploadVoting: voting ])
+	| voting |
+	[(voting := self class votingQueue peek) notNil] whileTrue: [
+		[(self uploadVoting: voting) 
+			ifTrue: [self class votingQueue next]]
+				on: Error
+				do: [^ false]].

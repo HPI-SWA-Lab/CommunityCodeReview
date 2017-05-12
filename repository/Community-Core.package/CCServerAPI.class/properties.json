@@ -4,8 +4,10 @@
 		 ],
 	"classvars" : [
 		"CommentQueue",
+		"CommentQueueMutex",
 		"SynchronizationProcess",
-		"VotingQueue" ],
+		"VotingQueue",
+		"VotingQueueMutex" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
