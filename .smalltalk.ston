@@ -1,1 +1,11 @@
-SmalltalkCISpec {  #loading : [    SCIMetacelloLoadSpec {      #baseline : 'CommunityCodeReview',      #directory : 'repository',      #load : [ 'Tests' ],      #platforms : [ #squeak ],      #useLatestMetacello : true    }  ]}
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'CommunityCodeReview',
+      #directory : 'repository',
+      #load : [ 'Tests' ],
+      #platforms : [ #squeak ],
+      #useLatestMetacello : true
+    }
+  ]
+}
