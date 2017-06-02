@@ -5,6 +5,7 @@
 	"classvars" : [
 		"CommentQueue",
 		"CommentQueueMutex",
+		"ServerAddress",
 		"SynchronizationProcess",
 		"VotingQueue",
 		"VotingQueueMutex" ],

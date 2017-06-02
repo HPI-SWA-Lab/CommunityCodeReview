@@ -1,3 +1,4 @@
 accessing
 serverAddress
-	^'http://mysterious-inlet-92455.herokuapp.com'
+
+	^ ServerAddress ifNil: [ServerAddress := 'https://www.hpi.uni-potsdam.de/hirschfeld/ccr']
