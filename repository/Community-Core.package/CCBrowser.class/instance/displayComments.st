@@ -1,4 +1,8 @@
 menu
 displayComments
 	
-	self selectedMessageName ifNil: [self displayCommentsForClass] ifNotNil: [self displayCommentsForMethod]
+	self hasMessageSelected 
+		ifTrue: [self displayCommentsForMethod] 
+		ifFalse: [self hasClassSelected
+					ifTrue: [self displayCommentsForClass]
+					ifFalse: [self displayCommentsForPackage]]

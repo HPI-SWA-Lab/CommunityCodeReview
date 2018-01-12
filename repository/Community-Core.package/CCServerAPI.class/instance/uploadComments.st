@@ -6,5 +6,5 @@ uploadComments
 		[(self uploadComment: comment)
 			ifTrue: [self class commentQueue next]]
 				on: Error
-				do: [^ false]].
+				do: [self halt. ^ false]].
 		

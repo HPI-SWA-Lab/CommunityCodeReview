@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"newWith:andType:" : "TD 2/28/2017 14:21" },
+		"newWith:" : "pre 1/12/2018 11:09" },
 	"instance" : {
 		"addComment" : "TD 5/1/2017 12:18",
 		"addCommentButtonFrame" : "TD 3/13/2017 19:12",
@@ -34,11 +34,9 @@
 		"markDone" : "TD 5/1/2017 12:18",
 		"metaObject" : "TD 2/28/2017 10:07",
 		"metaObject:" : "TD 2/28/2017 10:07",
-		"openClass" : "TD 2/28/2017 12:09",
-		"openPackage" : "TD 5/2/2017 16:31",
+		"openClass" : "pre 1/12/2018 11:09",
+		"openPackage" : "pre 1/12/2018 11:09",
 		"recomputeLayout" : "pre 4/26/2017 16:10",
 		"refreshCommentList" : "pre 5/2/2017 16:26",
 		"textMorphForComment:" : "pre 5/2/2017 16:07",
-		"type" : "TD 2/28/2017 10:57",
-		"type:" : "TD 2/28/2017 10:57",
 		"wantsHaloFromClick" : "pre 5/2/2017 15:52" } }

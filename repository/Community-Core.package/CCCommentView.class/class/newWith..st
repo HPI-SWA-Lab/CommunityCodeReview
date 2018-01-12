@@ -1,8 +1,7 @@
 as yet unclassified
-newWith: aMetaObject andType: aSelector
+newWith: aMetaObject 
 
 	^self new 
 		metaObject: aMetaObject;
-		type: aSelector;
 		initializeComments;
 		yourself
