@@ -4,8 +4,13 @@ baseline: spec
     spec
         for: #common
         do: [ 
+		spec baseline: 'Widgets' with: [
+			spec
+				repository: 'github://hpi-swa/widgets:master/repository';
+				loads: #(full)].
+	
             spec
-                package: 'Community-Core';
+                package: 'Community-Core' with: [ spec requires: #('Widgets')];
                 package: 'Community-Tests' with: [ spec requires: #('default') ].
             spec
                 group: 'default' with: #('Community-Core');
