@@ -35,8 +35,8 @@ get '/comments' do
 end
 
 get '/likes' do
-  likes = Like.includes(:review_entry).where(package_name: package_names).all
   package_names = JSON.parse(params['filter_packages'])
+  likes = Like.includes(:review_entry).where(package_name: package_names).all
   likes = likes.map do |each|
     each.to_h.merge(each.review_entry.to_h)
   end
