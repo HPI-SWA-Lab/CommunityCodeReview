@@ -33,7 +33,7 @@ get '/comments' do
 
   package_names = JSON.parse(params['filter_packages'] || '[]')
   comments = comments.select do |each|
-    package_names.include? each.package_name
+    package_names.include? each['package_name']
   end
 
   json comments
@@ -47,7 +47,7 @@ get '/likes' do
 
   package_names = JSON.parse(params['filter_packages'] || '[]')
   likes = likes.select do |each|
-    package_names.include? each.package_name
+    package_names.include? each['package_name']
   end
 
   json likes
