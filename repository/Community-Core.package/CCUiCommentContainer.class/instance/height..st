@@ -1,4 +1,4 @@
-as yet unclassified
+geometry
 height: aNumber
 
 	super height: aNumber.

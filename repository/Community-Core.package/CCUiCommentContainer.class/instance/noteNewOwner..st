@@ -1,4 +1,4 @@
-as yet unclassified
+submorphs-accessing
 noteNewOwner: aMorph
 
 	self width: aMorph width.
