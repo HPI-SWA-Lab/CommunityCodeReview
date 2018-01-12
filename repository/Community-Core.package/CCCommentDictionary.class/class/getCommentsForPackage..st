@@ -1,4 +1,4 @@
 protocol
 getCommentsForPackage: aName
 	
-	^self methodsDict at: aName ifAbsent: OrderedCollection new
+	^ self methodsDict at: aName ifAbsent: OrderedCollection new

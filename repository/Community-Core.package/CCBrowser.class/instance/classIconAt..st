@@ -1,4 +1,4 @@
-menu
+icons
 classIconAt: anIndex
 
 	| comments |
@@ -6,5 +6,6 @@ classIconAt: anIndex
 		ifFalse: [^ nil].
 
 	comments := CCCommentDictionary getCommentsForClass: (self classList at: anIndex) withBlanksTrimmed.
-	(comments isEmpty or: [comments last isDone]) ifTrue: [^super classIconAt: anIndex].
-	^ UiSilkIcons commentIcon
+	^ (comments isEmpty or: [comments last isDone]) 
+		ifTrue: [super classIconAt: anIndex]
+		ifFalse: [self commentIcon]
