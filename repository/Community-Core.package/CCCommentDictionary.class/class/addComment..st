@@ -1,6 +1,8 @@
 accessing
 addComment: aComment
 	
+	aComment metaobject ifNil: [^self].
+	
 	aComment metaobjectType = #CompiledMethod ifTrue: [
 		^ self 
 			addComment: aComment 
