@@ -1,5 +1,5 @@
 testing
-testFindeMetaobjectWith
+testFindMetaobjectWith
 	|comment|
 	
 	comment := CCComment new. 
