@@ -6,4 +6,4 @@ messageIconFor: aSelector
 	
 	^ (comments isEmpty or: [comments last isDone]) 
 		ifTrue: [super messageIconFor: aSelector]
-		ifFalse: [super commentIcon]
+		ifFalse: [self commentIcon]

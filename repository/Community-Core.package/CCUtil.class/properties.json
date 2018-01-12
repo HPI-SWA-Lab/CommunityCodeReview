@@ -1,0 +1,14 @@
+{
+	"category" : "Community-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "TD 1/12/2018 13:52",
+	"instvars" : [
+		 ],
+	"name" : "CCUtil",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
