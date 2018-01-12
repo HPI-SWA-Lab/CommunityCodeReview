@@ -5,5 +5,5 @@ selectorToServerKeyMapping
 		#unixTimestamp -> #'created_at' .
 	     #metaobjectType -> #'meta_object_type'.
 		#author -> #'author'.
-		#categoryName -> #'package_name'
+		#categoryNameShort -> #'package_name'
 	 }
