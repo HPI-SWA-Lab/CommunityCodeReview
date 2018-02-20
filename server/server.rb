@@ -32,8 +32,10 @@ get '/comments' do
   end
 
   package_names = JSON.parse(params['filter_packages'] || '[]')
-  comments = comments.select do |each|
-    package_names.include? each['package_name']
+  if not package_names.empty?
+    comments = comments.select do |each|
+      package_names.include? each['package_name']
+    end
   end
 
   json comments
@@ -46,8 +48,10 @@ get '/likes' do
   end
 
   package_names = JSON.parse(params['filter_packages'] || '[]')
-  likes = likes.select do |each|
-    package_names.include? each['package_name']
+  if not package_names.empty?
+    likes = likes.select do |each|
+      package_names.include? each['package_name']
+    end
   end
 
   json likes
