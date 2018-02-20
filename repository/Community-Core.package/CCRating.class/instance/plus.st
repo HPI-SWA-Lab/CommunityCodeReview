@@ -3,5 +3,5 @@ plus
 	|voting|
 	voting := CCPlusVoting newBy: Utilities authorInitials at: TimeStamp now for: self targetHash.
 	voting metaobjectType: self metaobjectType.
-	self votings add: voting.
+	self 	addVoting: voting.
 	CCServerAPI queueVoting: voting.

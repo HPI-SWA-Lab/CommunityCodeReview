@@ -6,4 +6,5 @@ uploadLikes
 		[(self uploadVoting: voting) 
 			ifTrue: [self class votingQueue next]]
 				on: Error
-				do: [^ false]].
+				do: [:error| Transcript show: error asString.
+					^self]].
