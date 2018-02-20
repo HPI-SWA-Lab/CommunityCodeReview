@@ -1,0 +1,3 @@
+toolbuilder
+hasPackageSelected
+	^self selectedSystemCategory notNil

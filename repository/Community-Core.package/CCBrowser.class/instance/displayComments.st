@@ -5,4 +5,4 @@ displayComments
 		ifTrue: [self displayCommentsForMethod] 
 		ifFalse: [self hasClassSelected
 					ifTrue: [self displayCommentsForClass]
-					ifFalse: [self displayCommentsForPackage]]
+					ifFalse: [ self hasPackageSelected ifTrue: [self displayCommentsForPackage]]]
