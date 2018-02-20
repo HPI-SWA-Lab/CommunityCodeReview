@@ -5,4 +5,4 @@ findMetaobjectWith: aMetaClassName
 		#Class -> [self findMetaobjectClass].
 		#Metaclass -> [self findMetaobjectClass].
 		#String -> [self findMetaobjectPackage]
-	}) at: aMetaClassName asSymbol) value	
+	}) at: aMetaClassName asSymbol) value
