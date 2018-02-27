@@ -1,8 +1,11 @@
 {
 	"class" : {
 		"newBy:at:for:withType:" : "TD 2/20/2018 16:53",
-		"singleAutorVote" : "TD 2/20/2018 16:31" },
+		"singleAutorVote" : "TD 2/27/2018 14:27",
+		"singleAutorVote:" : "TD 2/27/2018 14:16" },
 	"instance" : {
-		"=" : "TD 2/20/2018 15:32",
+		"=" : "TD 2/27/2018 14:39",
+		"hasSameSourceAs:" : "TD 2/27/2018 14:39",
+		"isCurrent" : "TD 2/20/2018 17:48",
 		"isMinus" : "td 7/13/2016 14:29",
-		"isPlus" : "td 7/13/2016 14:29" } }
+		"isPlus" : "TD 2/20/2018 17:43" } }
