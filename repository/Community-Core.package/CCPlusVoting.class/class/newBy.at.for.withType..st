@@ -8,7 +8,7 @@ newBy: anAuthor at: aTimeStamp for: aMetaObjectHash withType: aSymbol
 		findMetaobjectWith: aSymbol;
 		metaobjectType: aSymbol.
 	aSymbol = #CompiledMethod ifTrue: [result sourceCode: result metaobject getSource].
-		
+	aSymbol = #Class ifTrue: [result sourceCode: result metaobject definition].		
 	^result
 		
 	
