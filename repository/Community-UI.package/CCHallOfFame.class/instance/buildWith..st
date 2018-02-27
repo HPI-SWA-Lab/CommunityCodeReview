@@ -4,6 +4,7 @@ buildWith: aBuilder
 	| aWindowSpec codeHolderSpec |
 	aWindowSpec := aBuilder pluggableWindowSpec new
 		model: self;
+		label: 'Hall of Fame';
 		children: OrderedCollection new;
 		yourself.
 		
