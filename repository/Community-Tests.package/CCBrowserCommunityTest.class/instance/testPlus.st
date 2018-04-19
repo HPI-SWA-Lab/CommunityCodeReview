@@ -10,7 +10,4 @@ testPlus
 	oldPlus := (CCCommentDictionary getRatingForMethod: methodName inClass: class) numberOfPlus.
 
 	browser votePlus.
-	self assertRatingForMethod: methodName inClass: class equalsPlus: oldPlus + 1.
-
-	browser votePlus.
-	self assertRatingForMethod: methodName inClass: class equalsPlus: oldPlus + 2.
+	self assertRatingForMethod: methodName inClass: class equalsPlus: oldPlus + 1

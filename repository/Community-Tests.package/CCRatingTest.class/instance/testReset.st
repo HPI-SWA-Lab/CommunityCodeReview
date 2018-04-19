@@ -4,10 +4,10 @@ testReset
 	
 	rating := CCRating new.
 	rating
-		plus; 
+		targetHash: 'Object';
+		metaobjectType: #Class;
 		plus.
-
-	self assertRating: rating equalsPlus: 2.
+	self assertRating: rating equalsPlus: 1.
 	
 	rating reset.
 	self assertRating: rating equalsPlus: 0.
