@@ -1,3 +1,5 @@
 protocoll
 metaobjectType
-	metaobjectType ifNil:  [^self metaobject className] ifNotNil: [^ metaobjectType]
+	metaobjectType 
+		ifNil:  [^self metaobject className] 
+		ifNotNil: [^ metaobjectType]

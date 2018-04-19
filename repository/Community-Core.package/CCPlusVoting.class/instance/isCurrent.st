@@ -1,4 +1,4 @@
 voting
 isCurrent
 
-	^self class showLikesForOldVersions or: [self doesStillApply]
+	^ self class showLikesForOldVersions or: [self doesStillApply]

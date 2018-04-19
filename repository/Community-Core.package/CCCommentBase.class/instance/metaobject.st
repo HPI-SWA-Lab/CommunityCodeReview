@@ -1,3 +1,3 @@
 accessing
 metaobject
-	^ metaobject
+	^ metaobject ifNil: [self findMetaobject]
