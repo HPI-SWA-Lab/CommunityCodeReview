@@ -1,3 +1,0 @@
-voting
-isPlus
-	self subclassResponsibility

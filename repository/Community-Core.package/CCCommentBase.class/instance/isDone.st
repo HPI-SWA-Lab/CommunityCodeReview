@@ -1,3 +1,0 @@
-protocoll
-isDone 
-	^false

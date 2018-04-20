@@ -1,4 +1,0 @@
-protocoll
-findMetaobjectPackage
-	
-	^self targetHash
