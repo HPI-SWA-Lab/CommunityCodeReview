@@ -1,6 +1,5 @@
 synchronization
 restartSynchronizationProcess
 
-	SynchronizationProcess ifNotNilDo: [:p | p terminate].
-	SynchronizationProcess := nil.
+	SynchronizationProcess terminate.
 	self startSynchronizationProcess.
