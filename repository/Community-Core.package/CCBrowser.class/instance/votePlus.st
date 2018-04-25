@@ -8,4 +8,5 @@ votePlus
 			ifFalse:  [self hasPackageSelected 
 				ifTrue: [CCCommentDictionary plusForPackage: self selectedSystemCategoryName]
 				ifFalse: [^self]]].
-	self displayRating
+	self displayRating.
+	self changed: #relabel.

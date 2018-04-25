@@ -3,7 +3,8 @@ selectorToServerKeyMapping
 	^ Dictionary newFrom: {
 		#targetHash -> #'meta_object_hash' .
 		#unixTimestamp -> #'created_at' .
-	     #metaobjectType -> #'meta_object_type'.
+	    #metaobjectType -> #'meta_object_type'.
 		#author -> #'author'.
-		#categoryNameShort -> #'package_name'
+		#categoryNameShort -> #'package_name'.
+		#sourceCode -> #'source_code'
 	 }

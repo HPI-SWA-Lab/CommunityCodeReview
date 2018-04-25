@@ -1,0 +1,3 @@
+menu
+baseLableString
+	^ 'CC Browser'
