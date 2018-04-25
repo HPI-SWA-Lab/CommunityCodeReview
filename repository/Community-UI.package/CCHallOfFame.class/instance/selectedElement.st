@@ -1,4 +1,5 @@
 as yet unclassified
 selectedElement
 	
-	^ self getFamousElements at: self selectedElementIndex ifAbsent: [^nil]
+	self selectedElementIndex = 0 ifTrue: [^ nil].
+	^ self getFamousElements at: self selectedElementIndex

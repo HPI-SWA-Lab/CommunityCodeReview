@@ -2,10 +2,11 @@
 	"class" : {
 		"open" : "pre 2/20/2018 16:53" },
 	"instance" : {
-		"buildWith:" : "TD 2/27/2018 16:46",
-		"contents" : "TD 2/27/2018 16:45",
+		"aboutToStyle:" : "pre 4/19/2018 12:29",
+		"buildWith:" : "pre 4/19/2018 11:33",
+		"contents" : "pre 4/19/2018 12:04",
 		"getFamousElementLabels" : "pre 2/20/2018 17:32",
-		"getFamousElements" : "pre 2/20/2018 17:32",
-		"selectedElement" : "TD 2/27/2018 15:02",
+		"getFamousElements" : "pre 4/19/2018 12:00",
+		"selectedElement" : "pre 4/19/2018 11:32",
 		"selectedElementIndex" : "pre 2/20/2018 17:09",
 		"selectedElementIndex:" : "pre 2/20/2018 17:30" } }
