@@ -1,0 +1,3 @@
+protocoll
+isDone 
+	^false
