@@ -1,4 +1,4 @@
 accessing
 = aComment
 
-	^ self author = aComment author and: [self timestamp = aComment timestamp] and: [self targetHash = aComment targetHash]
+	^ self author = aComment author and: [self hasSameTimestamp: aComment] and: [self targetHash = aComment targetHash]

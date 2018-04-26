@@ -8,7 +8,7 @@ newFor: aComment
 	color := self userInterfaceTheme get: #textColor for: MenuItemMorph.
 	aComment doesStillApply
 		ifTrue: [commentText addAttribute: (TextColor color: color)]
-		ifFalse: [commentText addAttribute: (TextColor color: color muchDarker)].
+		ifFalse: [commentText addAttribute: (TextColor color: color muchLighter)].
 
 	^ self new
 		contents: commentText;
