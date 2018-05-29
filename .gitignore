@@ -1,6 +1,7 @@
 ## Core latex/pdflatex auxiliary files:
 ICSE_SRC/*.pdf
 COP18/*.pdf
+ICSE_2019/main.pdf
 Programming_SRC/*.pdf
 *.aux
 *.lof
