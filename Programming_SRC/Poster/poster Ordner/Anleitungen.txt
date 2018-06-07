@@ -1,0 +1,93 @@
+ADOBE INDESIGN - DRUCKANLEITUNGEN FÜR BELICHTUNGSBÜROBERICHT
+
+SATZDATEINAME: poster.indd
+
+PACKDATUM: 30.03.2017 09:01
+Erstellungsdatum 28.03.2017
+Änderungsdatum: 30.03.2017
+
+AUFTRAGGEBER
+
+Firma: 
+Ansprechpartner: 
+Adresse: 
+
+
+
+
+
+Telefon: 
+Fax: 
+E-Mail: 
+
+BESONDERE ANWEISUNGEN UND ANDERE ANMERKUNGEN
+
+
+
+
+
+
+Externe Zusatzmodule 0
+Nicht deckende Objekte:Auf Seite1
+
+SCHRIFTARTEN
+7 Schriftart(en) verwendet; 0 fehlend, 2 eingebettet, 0 unvollst., 0 geschützt
+
+Schriftarten verpackt
+- Name: ArialMT; Typ: OpenType TrueType, Status: OK
+- Name: Calibri; Typ: OpenType TrueType, Status: OK
+- Name: Calibri-Bold; Typ: OpenType TrueType, Status: OK
+- Name: Calibri-Light; Typ: OpenType TrueType, Status: OK
+- Name: NeoSans; Typ: Type 1, Status: eingebettet
+- Name: NeoSans-Medium; Typ: Type 1, Status: eingebettet
+- Name: TimesNewRomanPSMT; Typ: OpenType TrueType, Status: OK
+
+
+FARBEN UND DRUCKFARBEN
+4 Prozessfarbe(n); 0 Volltonfarbe(n)
+
+- Name und Typ: Prozessfarbe Cyan; Winkel: 0,000; Linien/Zoll: 0,000
+- Name und Typ: Prozessfarbe Magenta; Winkel: 0,000; Linien/Zoll: 0,000
+- Name und Typ: Prozessfarbe Gelb; Winkel: 0,000; Linien/Zoll: 0,000
+- Name und Typ: Prozessfarbe Schwarz; Winkel: 0,000; Linien/Zoll: 0,000
+
+
+VERKNÜPFUNGEN UND BILDER
+(Nur fehlende & eingebettete Verknüpfungen)
+Verknüpfungen und Bilder: 2 Verknüpfung(en) gefunden; 0 geändert, 0 fehlend
+Bilder: 0 eingebettet, 1 verwenden RGB-Farbraum
+
+
+DRUCKEINSTELLUNGEN
+PPD: n. zutr., (An OneNote 2010 senden)
+Druckausgabe: Drucker
+Anzahl der Exemplare: 1
+Druckbögen: Nein
+Gerade/Ungerade Seiten: Beides
+Seiten: Alle
+Probedruck: Nein
+Druckseite aufteilen: Ohne
+Skalieren: 100 %, 100 %
+Seitenposition: Oben links
+Ebenen drucken: Sichtbare und druckbare Ebenen
+Druckermarken: Ohne
+Anschnitt: 0 mm, 0 mm, 0 mm, 0 mm
+Farbe: Composite-RGB
+Überfüllungsmodus: Ohne
+Bilddaten senden: Optimierte Abtastauflösung
+OPI/DCS-Bildersetzung: Nein
+Seitenformat: Benutzerdefiniert: 841 mm x 1189 mm
+Papierabmessungen: 210 mm x 297 mm
+Format: Hochformat
+Negativ: Nein
+Spiegelmodus: Aus
+
+
+DATEIPAKETLISTE
+
+1. poster.indd; Typ: Adobe InDesign-Satzdatei; Größe: 1352K
+2. arial.ttf; Typ: Schriftartendatei; Größe: 893K
+3. calibri.ttf; Typ: Schriftartendatei; Größe: 1300K
+4. calibrib.ttf; Typ: Schriftartendatei; Größe: 1266K
+5. calibril.ttf; Typ: Schriftartendatei; Größe: 1106K
+6. times.ttf; Typ: Schriftartendatei; Größe: 1084K
