@@ -1,4 +1,4 @@
 toolbuilder
 buttons
 
-	^ self buttonsForClass
+	^ self buttonsForClass 

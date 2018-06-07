@@ -7,7 +7,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"metaObject",
-		"type",
 		"comments",
 		"commentText",
 		"commentUIContainer" ],

@@ -1,5 +1,5 @@
 accessing
 commentQueue
 
-	CommentQueue ifNil: [CommentQueue := OrderedCollection new].
+	CommentQueue ifNil: [CommentQueue := SharedQueue2 new].
 	^CommentQueue

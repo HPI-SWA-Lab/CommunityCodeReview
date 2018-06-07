@@ -1,3 +1,4 @@
 constructors
 selectorToServerKeyMapping
-	^ super selectorToServerKeyMapping , (Dictionary newFrom: {#text -> #'content' })
+	^ super selectorToServerKeyMapping , (Dictionary newFrom: {
+	#text -> #'content' })

@@ -10,5 +10,5 @@
 	"name" : "CCCommentDictionaryTest",
 	"pools" : [
 		 ],
-	"super" : "CommunityTestCase",
+	"super" : "CCCommunityTestCase",
 	"type" : "normal" }

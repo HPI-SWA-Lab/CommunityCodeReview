@@ -10,5 +10,5 @@
 	"name" : "CCVersionTest",
 	"pools" : [
 		 ],
-	"super" : "CommunityTestCase",
+	"super" : "CCCommunityTestCase",
 	"type" : "normal" }

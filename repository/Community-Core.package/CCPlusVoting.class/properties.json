@@ -1,0 +1,14 @@
+{
+	"category" : "Community-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"SingleAuthorVote" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CCPlusVoting",
+	"pools" : [
+		 ],
+	"super" : "CCVoting",
+	"type" : "normal" }

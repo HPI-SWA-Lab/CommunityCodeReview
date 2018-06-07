@@ -1,0 +1,16 @@
+{
+	"category" : "Community-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"temporaryCommentDict",
+		"temporaryCommentQueue",
+		"temporaryServerAddress" ],
+	"name" : "CCCommunityTestCase",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

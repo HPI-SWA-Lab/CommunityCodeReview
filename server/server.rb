@@ -30,6 +30,14 @@ get '/comments' do
   comments = comments.map do |each|
     each.to_h.merge(each.review_entry.to_h)
   end
+
+  package_names = JSON.parse(params['filter_packages'] || '[]')
+  if not package_names.empty?
+    comments = comments.select do |each|
+      package_names.include? each['package_name']
+    end
+  end
+
   json comments
 end
 
@@ -38,6 +46,14 @@ get '/likes' do
   likes = likes.map do |each|
     each.to_h.merge(each.review_entry.to_h)
   end
+
+  package_names = JSON.parse(params['filter_packages'] || '[]')
+  if not package_names.empty?
+    likes = likes.select do |each|
+      package_names.include? each['package_name']
+    end
+  end
+
   json likes
 end
 

@@ -1,4 +1,10 @@
 as yet unclassified
 uploadComments
 
-	self class commentQueue: (self class commentQueue reject: [ :comment | self uploadComment: comment ])
+	| comment |
+	[(comment := self class commentQueue peek) notNil] whileTrue: [
+		[(self uploadComment: comment)
+			ifTrue: [self class commentQueue next]]
+				on: Error
+				do: [self halt. ^ false]].
+		

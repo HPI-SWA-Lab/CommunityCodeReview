@@ -1,3 +1,6 @@
 toolbuilder
 labelString
-	^ 'No lable defined'
+	| likes |
+	likes := self getLikes.
+	likes == 0 ifTrue: [^ String empty].
+	^ '[', likes, ' likes] '

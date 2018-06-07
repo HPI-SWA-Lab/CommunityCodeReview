@@ -1,0 +1,4 @@
+protocoll
+findMetaobjectPackage
+	
+	^self targetHash

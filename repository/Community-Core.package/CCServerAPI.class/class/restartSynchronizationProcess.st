@@ -1,0 +1,5 @@
+synchronization
+restartSynchronizationProcess
+
+	SynchronizationProcess terminate.
+	self startSynchronizationProcess.

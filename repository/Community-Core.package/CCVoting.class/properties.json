@@ -1,0 +1,14 @@
+{
+	"category" : "Community-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ShowLikesForOldVersions" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CCVoting",
+	"pools" : [
+		 ],
+	"super" : "CCCommentBase",
+	"type" : "normal" }

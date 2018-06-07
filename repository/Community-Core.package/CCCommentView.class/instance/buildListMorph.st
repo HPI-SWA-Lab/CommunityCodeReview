@@ -1,7 +1,6 @@
 toolbuilder
 buildListMorph
 
-	commentUIContainer := UiContainer new.
-	commentUIContainer changeTableLayout.
+	commentUIContainer := CCUiCommentContainer new.
 	self refreshCommentList.
 	^ commentUIContainer

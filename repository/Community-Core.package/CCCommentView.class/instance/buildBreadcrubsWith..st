@@ -12,6 +12,7 @@ buildBreadcrubsWith: builder
 		buttonSpec label: spec first.
 		buttonSpec action: spec second.
 		spec size > 2 ifTrue:[buttonSpec help: spec third].
+		spec size > 3 ifTrue:[buttonSpec color: spec fourth].
 		panelSpec children add: buttonSpec.
 	].
 

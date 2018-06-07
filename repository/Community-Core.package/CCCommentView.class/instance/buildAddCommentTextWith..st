@@ -3,7 +3,7 @@ buildAddCommentTextWith: builder
 	
 	| textSpec |
 	
-	textSpec := builder pluggableInputFieldSpec new.
+	textSpec := builder pluggableTextSpec new.
 	textSpec
 		model: self;
 		frame: self addCommentTextFrame;

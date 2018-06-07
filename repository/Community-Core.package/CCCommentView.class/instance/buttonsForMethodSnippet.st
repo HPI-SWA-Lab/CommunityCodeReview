@@ -5,4 +5,4 @@ buttonsForMethodSnippet
 			selector to send
 			help message"
 
-	^ self buttonsForMethod, #(('method' openPackage 'Open comments of the containing method.'))
+	^ self buttonsForMethod, #(('Method' openPackage 'Open comments of the containing method.'))

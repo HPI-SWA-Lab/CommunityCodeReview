@@ -1,0 +1,34 @@
+% !TeX spellcheck = en_us
+%!TEX root = main.tex
+
+\section{Related Work}
+We build on \cite{Duerschmid2017CCR}
+
+
+Many projects working with feature branches perform code reviews during pull requests before merging the changes into the main branch~\cite{driessen2010successful, calefato2015PLE, yu2015pullrequests, tsay2014contributionGithub, gousios2014PullBasedSD, rahman2014pullrequests, tsay2014ContributionDiscussion}. 
+%
+Tools like CodeFlow~\cite{bird2015CodeReviewPlatform}, Mondrian~\cite{kennedy2006Mondrian}, Gerrit~\cite{google2016gerrit},  Phabricator~\cite{tsotsis2011Phabricator}, ClusterChanges~\cite{barnett2015helpingdevelopers} and the Eclipse plug-in EGerrit\footnote{\url{https://www.eclipse.org/egerrit/}} support these change-based code reviews.
+%
+In contrast, our concept gives feedback on the current state of code. 
+%
+The reviews supported by these tools are made using a push model, meaning that developers request reviews, while our tool uses a pull model, meaning that developers can comment on any code without request of the author.
+%
+Hence, our concept allows to comment on library code and framework code and therefore to give feedback to the developers of third party software. 
+%
+Furthermore, our feedback is continuous and therefore enables new developers to comment on old code. 
+%
+Similar to plug-ins like EGerrit, the proposed tool enables the developers to stay inside their IDE and avoid context switches.
+%
+This provides a more self-sustaining environment which supports the liveness of the development process. 
+%
+However, a dedicated review process before merging changes into the main branch lets the developers focus on issues raised up by the specific changes. 
+%
+Therefore, we propose to use our concept in conjunction with pull requests or other change-based reviews and not instead of it.
+%
+
+%
+Discussions and questions about the source code traditionally are done using mailing lists~\cite{vasilescu2014QA}.
+%
+The recent emergence of questions \& answers (Q\&A) sites introduces gamification of archiving reputation for answering questions~\cite{vasilescu2014QA}.
+%
+But like pull requests, they usually are not done inside the IDE but on a separate StackExchange network like StackOverflow.

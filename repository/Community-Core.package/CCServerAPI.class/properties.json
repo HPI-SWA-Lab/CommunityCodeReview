@@ -3,7 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"CommentQueue" ],
+		"CommentQueue",
+		"CommentQueueMutex",
+		"ServerAddress",
+		"SynchronizationProcess",
+		"VotingQueue",
+		"VotingQueueMutex" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

@@ -1,3 +1,0 @@
-voting
-isMinus
-	^ true

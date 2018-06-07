@@ -1,0 +1,14 @@
+{
+	"category" : "Community-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CCRatingTest",
+	"pools" : [
+		 ],
+	"super" : "CCCommunityTestCase",
+	"type" : "normal" }

@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"MethodsDict" ],
+		"MethodsDict",
+		"RatingDict" ],
 	"commentStamp" : "TD 7/7/2016 15:28",
 	"instvars" : [
 		 ],

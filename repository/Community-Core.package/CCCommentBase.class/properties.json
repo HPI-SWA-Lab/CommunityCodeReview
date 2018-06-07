@@ -7,10 +7,11 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"hash",
+		"author",
 		"timestamp",
 		"metaobject",
-		"version",
-		"metaobjectType" ],
+		"metaobjectType",
+		"sourceCode" ],
 	"name" : "CCCommentBase",
 	"pools" : [
 		 ],

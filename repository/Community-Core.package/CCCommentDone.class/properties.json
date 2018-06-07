@@ -10,5 +10,5 @@
 	"name" : "CCCommentDone",
 	"pools" : [
 		 ],
-	"super" : "CCCommentBase",
+	"super" : "CCComment",
 	"type" : "normal" }

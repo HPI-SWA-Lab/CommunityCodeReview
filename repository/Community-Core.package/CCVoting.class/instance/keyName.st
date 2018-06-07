@@ -1,0 +1,4 @@
+accessing
+keyName
+	^ self targetHash.
+	

@@ -4,6 +4,8 @@ getRatingForMethod: aMethodName inClass: aClassName
 	self
 		if: aMethodName
 		or: aClassName
-		nil: [^ Rating new].
-	keyName := (aClassName , 'Method' , aMethodName) asSymbol.
-	^ self methodsDict at: keyName ifAbsent: Rating new
+		nil: [^ CCRating new].
+	keyName := (aClassName , '>>#' , aMethodName) asSymbol.
+	^ self ratingDict 
+		at: keyName 
+		ifAbsent: (CCRating new targetHash: keyName asString; metaobjectType: #CompiledMethod)

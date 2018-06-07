@@ -1,0 +1,3 @@
+windowMenu
+actionSelfUpdate
+	self class selfUpdate

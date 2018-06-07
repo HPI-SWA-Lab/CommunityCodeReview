@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"initialize" : "pre 5/2/2017 17:08:02.813581" },
+	"instance" : {
+		"addComment" : "TD 3/13/2017 19:30",
+		"baseLableString" : "TD 4/25/2018 15:14",
+		"buildOptionalButtonsWith:" : "TD 5/2/2017 15:52",
+		"buildSystemCategoryListWith:" : "pre 1/12/2018 14:37",
+		"categoryIconAt:" : "pre 1/12/2018 14:43",
+		"classIconAt:" : "pre 1/12/2018 14:39",
+		"commentClassListMenu:" : "TD 3/14/2017 11:41",
+		"commentIcon" : "pre 1/12/2018 14:39",
+		"displayClassComments" : "pre 1/12/2018 11:09",
+		"displayComments" : "TD 2/20/2018 15:59",
+		"displayCommentsForClass" : "pre 1/12/2018 11:09",
+		"displayCommentsForMethod" : "pre 1/12/2018 11:09",
+		"displayCommentsForPackage" : "pre 1/12/2018 11:09",
+		"displayRating" : "TD 2/20/2018 16:22",
+		"hasPackageSelected" : "TD 2/20/2018 16:00",
+		"labelString" : "TD 4/25/2018 15:16",
+		"messageIconFor:" : "TD 1/12/2018 14:54",
+		"optionalButtonPairs" : "TD 4/20/2018 19:25",
+		"ratingMessageListMenu:" : "TD 5/1/2017 13:53",
+		"resetRating" : "TD 12/19/2016 11:31",
+		"selectMessageNamed:" : "TD 4/25/2018 15:16",
+		"thumbUpIconMorph" : "pre 5/12/2017 13:14",
+		"voteMinus" : "TD 12/19/2016 11:31",
+		"votePlus" : "TD 4/25/2018 15:19" } }

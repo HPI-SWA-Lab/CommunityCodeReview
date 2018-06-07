@@ -1,0 +1,15 @@
+{
+	"category" : "Community-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"selectedElement",
+		"selectedElementIndex" ],
+	"name" : "CCHallOfFame",
+	"pools" : [
+		 ],
+	"super" : "CodeHolder",
+	"type" : "normal" }

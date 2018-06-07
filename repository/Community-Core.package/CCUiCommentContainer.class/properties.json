@@ -1,0 +1,14 @@
+{
+	"category" : "Community-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CCUiCommentContainer",
+	"pools" : [
+		 ],
+	"super" : "UiContainer",
+	"type" : "normal" }
