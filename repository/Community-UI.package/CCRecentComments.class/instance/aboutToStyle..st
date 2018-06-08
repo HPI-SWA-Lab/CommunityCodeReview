@@ -6,7 +6,7 @@ aboutToStyle: aStyler
 	"The following is safe as we know that the Hall of Fame only displays 
 	rating objects --pre"
 	self selectedElement ifNil: [^false].
-	aStyler classOrMetaClass: (self selectedElement votings first isCommentOnMethod 
-		ifTrue: [self selectedElement votings first metaobject methodClass] 
+	aStyler classOrMetaClass: (self selectedElement isCommentOnMethod 
+		ifTrue: [self selectedElement metaobject methodClass] 
 		ifFalse: [nil]).
 	^ true

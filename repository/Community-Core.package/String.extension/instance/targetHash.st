@@ -1,0 +1,4 @@
+*Community-Core
+targetHash
+
+	^ self

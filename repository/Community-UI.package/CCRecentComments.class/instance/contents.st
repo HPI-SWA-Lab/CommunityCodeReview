@@ -1,4 +1,4 @@
 as yet unclassified
 contents
 
-	^ self selectedElement ifNotNil: [:e | (e votings select: [:a | a doesStillApply]) first sourceCode]
+	^ self selectedElement ifNotNil: [:comment | comment sourceCode ifNil: String empty]

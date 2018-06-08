@@ -1,3 +1,5 @@
 toolbuilder
 initializeComments 
-	self comments: Array new
+	self comments: (self metaObject
+		ifNil: [#()]
+		ifNotNil: [CCCommentDictionary getCommentsFor: self metaObject targetHash])

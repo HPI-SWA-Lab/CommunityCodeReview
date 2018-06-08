@@ -13,11 +13,14 @@ buildWith: aBuilder
 		list: #getMostRecentCommentsLabels;
 		setIndex: #selectedElementIndex:;
 		getIndex: #selectedElementIndex;
-		frame: (0@0 corner: 0.5@1);
+		frame: (0@0 corner: 0.3@1);
 		yourself).
-		
+	
+	self commentList buildCommentListWith: aBuilder in: aWindowSpec.
+	aWindowSpec children last	frame: (0.3@0 corner: 0.67@1).
+			
 	codeHolderSpec := self buildCodePaneWith: aBuilder.
-	codeHolderSpec frame: (0.5@0 corner: 1@1).
+	codeHolderSpec frame: (0.67@0 corner: 1@1).
 	aWindowSpec children add: codeHolderSpec.
 
 	^ aBuilder build: aWindowSpec
