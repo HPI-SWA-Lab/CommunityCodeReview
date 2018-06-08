@@ -5,7 +5,7 @@ newWith: aString forMethod: aMethodName in: aClass
 	CCUtil assertMethodName: aMethodName.
 	
 	method := (Compiler evaluate: aClass) >> aMethodName asSymbol.
-	^(self newWith: aClass name,'>>#', aMethodName and: TimeStamp now)
+	^(self newWith: aClass name,'>>#', aMethodName)
 		text: aString;
 		metaobject: method;
 		yourself
