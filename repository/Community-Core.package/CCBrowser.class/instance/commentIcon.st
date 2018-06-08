@@ -1,4 +1,4 @@
 icons
 commentIcon
 
-	^ UiSilkIcons commentIcon
+	^ UiSilkIcons userCommentIcon

@@ -3,6 +3,6 @@ categoryIconAt: anIndex
 
 	| comments |
 	comments := CCCommentDictionary getCommentsForPackage: (self systemCategoryList at: anIndex) withBlanksTrimmed.
-	^ (comments isEmpty or: [comments last isDone]) 
+	^ comments isEmpty
 		ifTrue: [nil]
-		ifFalse: [self commentIcon]
+		ifFalse: [ self iconFor: comments ]

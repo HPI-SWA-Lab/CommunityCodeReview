@@ -4,6 +4,6 @@ messageIconFor: aSelector
 	| comments |
 	comments := CCCommentDictionary getCommentsForMethod: aSelector asString inClass: self selectedClassOrMetaClass name.
 	
-	^ (comments isEmpty or: [comments last isDone]) 
+	^ comments isEmpty
 		ifTrue: [super messageIconFor: aSelector]
-		ifFalse: [self commentIcon]
+		ifFalse: [ self iconFor: comments ]
