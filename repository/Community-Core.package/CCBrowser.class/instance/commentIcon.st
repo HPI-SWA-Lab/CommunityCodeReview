@@ -1,4 +1,4 @@
 icons
 commentIcon
 
-	^ UiSilkIcons userCommentIcon scaledToSize: 12@12
+	^ UiSilkIcons commentIcon
