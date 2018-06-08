@@ -1,3 +1,6 @@
 accessing
 hasSameTimestamp: aComment
-	^(self timestamp - aComment timestamp) seconds abs <= 15
+	
+	^ (self timestamp isNil or: [aComment timestamp isNil]) 
+		ifTrue: [false]
+		ifFalse: [(self timestamp - aComment timestamp) seconds abs <= 15]
