@@ -1,0 +1,4 @@
+icons
+commentDoneIcon
+
+	^ UiSilkIcons commentsIcon
