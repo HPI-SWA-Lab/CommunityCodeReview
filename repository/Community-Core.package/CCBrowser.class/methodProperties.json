@@ -2,7 +2,6 @@
 	"class" : {
 		"initialize" : "pre 5/2/2017 17:08:02.813581" },
 	"instance" : {
-		"addComment" : "TD 3/13/2017 19:30",
 		"baseLableString" : "TD 4/25/2018 15:14",
 		"buildOptionalButtonsWith:" : "TD 5/2/2017 15:52",
 		"buildSystemCategoryListWith:" : "pre 1/12/2018 14:37",
@@ -22,7 +21,7 @@
 		"labelString" : "TD 4/25/2018 15:16",
 		"messageIconFor:" : "TD 6/8/2018 11:19",
 		"optionalButtonPairs" : "TD 4/20/2018 19:25",
-		"ratingMessageListMenu:" : "TD 5/1/2017 13:53",
+		"ratingMessageListMenu:" : "TD 6/25/2018 13:58",
 		"resetRating" : "TD 12/19/2016 11:31",
 		"selectMessageNamed:" : "TD 4/25/2018 15:16",
 		"thumbUpIconMorph" : "pre 5/12/2017 13:14",

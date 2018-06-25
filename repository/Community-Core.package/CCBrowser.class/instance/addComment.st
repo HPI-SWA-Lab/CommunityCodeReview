@@ -1,3 +1,0 @@
-menu
-addComment
-	CCCommentDictionary queueCommentForMethod: self selectedMessageName inClass: self selectedClassOrMetaClass
