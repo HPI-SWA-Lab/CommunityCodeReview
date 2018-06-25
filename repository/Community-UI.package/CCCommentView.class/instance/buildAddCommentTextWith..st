@@ -7,7 +7,6 @@ buildAddCommentTextWith: builder
 	textSpec
 		model: self;
 		frame: self addCommentTextFrame;
-		"setText: #commentText: ;
-		"editText: #commentText:;
+		editText: #commentText:;
 		getText: #commentText.
 	^ textSpec

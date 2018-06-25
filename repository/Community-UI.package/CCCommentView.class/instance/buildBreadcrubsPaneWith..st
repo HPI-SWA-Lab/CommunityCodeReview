@@ -1,10 +1,8 @@
 toolbuilder
-buildBreadcrubsPaneWith: builder in: windowSpec
+buildBreadcrubsPaneWith: builder
 	
 	| buttonSpec |
-	
 	buttonSpec := self buildBreadcrubsWith: builder.
 	buttonSpec frame: self buttonsFrame.
+	^ buttonSpec
 	
-	windowSpec children add: buttonSpec.
-	^windowSpec

@@ -1,7 +1,7 @@
 toolbuilder
 buildWith: aBuilder
 
-	| aWindowSpec codeHolderSpec |
+	| aWindowSpec codeHolderSpec addCommentPaneSpec commentListSpec |
 	aWindowSpec := aBuilder pluggableWindowSpec new
 		model: self;
 		children: OrderedCollection new;
@@ -16,8 +16,13 @@ buildWith: aBuilder
 		frame: (0@0 corner: 0.3@1);
 		yourself).
 	
-	self commentList buildCommentListWith: aBuilder in: aWindowSpec.
-	aWindowSpec children last	frame: (0.3@0 corner: 0.67@1).
+	commentListSpec := self commentList buildCommentListWith: aBuilder.
+	commentListSpec frame: (0.3@0 corner: 0.67@0.9).
+	aWindowSpec children add: commentListSpec.
+			
+	addCommentPaneSpec := self commentList buildAddCommentPanelWith: aBuilder.
+	addCommentPaneSpec frame: (0.3@0.9 corner: 0.67@1).
+	aWindowSpec children add: addCommentPaneSpec.
 			
 	codeHolderSpec := self buildCodePaneWith: aBuilder.
 	codeHolderSpec frame: (0.67@0 corner: 1@1).

@@ -7,7 +7,7 @@ buildWith: builder
 	windowSpec children: OrderedCollection new.
 	windowSpec label: #labelString.
 	
-	self buildBreadcrubsPaneWith: builder in: windowSpec.
-	self buildCommentListWith: builder in: windowSpec.
-	self buildAddCommentPanelWith: builder in: windowSpec.
+	windowSpec children add: (self buildBreadcrubsPaneWith: builder).
+	windowSpec children add: (self buildCommentListWith: builder).
+	windowSpec children add: (self buildAddCommentPanelWith: builder).
 	^builder build: windowSpec
