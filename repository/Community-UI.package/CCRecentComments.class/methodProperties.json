@@ -1,6 +1,8 @@
 {
 	"class" : {
-		"open" : "pre 6/8/2018 13:18" },
+		"initialize" : "pre 6/25/2018 14:45",
+		"open" : "pre 6/8/2018 13:18",
+		"registerInWorldMenu" : "pre 6/25/2018 14:48" },
 	"instance" : {
 		"aboutToStyle:" : "pre 6/8/2018 14:11",
 		"buildWith:" : "pre 6/8/2018 14:27",
@@ -13,4 +15,4 @@
 		"numberOfRecentCommentsToShow" : "pre 6/8/2018 13:27",
 		"selectedElement" : "pre 6/8/2018 14:08",
 		"selectedElementIndex" : "pre 6/8/2018 13:18",
-		"selectedElementIndex:" : "pre 6/8/2018 14:41" } }
+		"selectedElementIndex:" : "pre 6/25/2018 14:49" } }

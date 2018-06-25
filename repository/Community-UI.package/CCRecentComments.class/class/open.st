@@ -1,4 +1,4 @@
-toolbuilder
+instance creation
 open
 	"self open"
 	
