@@ -1,4 +1,0 @@
-toolbuilder
-buttons
-
-	^ self buttonsForMethod

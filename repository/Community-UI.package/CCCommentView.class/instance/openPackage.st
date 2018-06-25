@@ -1,3 +1,3 @@
 interaction
 openPackage
-	ToolBuilder open: (CCCommentViewPackage newWith: self getClass category asString)
+	ToolBuilder open: (CCCommentView newForPackage: self getClass category asString)

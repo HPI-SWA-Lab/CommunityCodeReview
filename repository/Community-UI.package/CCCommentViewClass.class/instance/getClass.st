@@ -1,4 +1,0 @@
-toolbuilder
-getClass
-
-	^ self metaObject

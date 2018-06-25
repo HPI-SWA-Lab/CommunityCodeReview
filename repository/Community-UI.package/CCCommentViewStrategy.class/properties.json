@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"metaObject",
-		"comments",
-		"commentText",
-		"commentUIContainer",
-		"metaObjectStrategy" ],
-	"name" : "CCCommentView",
+		 ],
+	"name" : "CCCommentViewStrategy",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "Object",
 	"type" : "normal" }

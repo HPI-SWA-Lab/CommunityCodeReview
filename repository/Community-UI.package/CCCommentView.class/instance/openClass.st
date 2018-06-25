@@ -1,3 +1,3 @@
 interaction
 openClass
-	ToolBuilder open: (CCCommentViewClass newWith: self getClass)
+	ToolBuilder open: (CCCommentView newForClass: self getClass)

@@ -5,3 +5,5 @@ buttons
 			button label
 			selector to send
 			help message"
+
+	^ self metaObjectStrategy buttons: self

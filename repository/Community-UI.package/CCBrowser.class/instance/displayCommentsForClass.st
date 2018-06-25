@@ -1,4 +1,4 @@
 menu
 displayCommentsForClass
 
-	ToolBuilder open: (CCCommentViewClass newWith: self selectedClassOrMetaClass)
+	ToolBuilder open: (CCCommentView newForClass: self selectedClassOrMetaClass)

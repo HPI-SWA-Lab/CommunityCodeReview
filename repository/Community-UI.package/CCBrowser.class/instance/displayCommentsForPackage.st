@@ -2,4 +2,4 @@ menu
 displayCommentsForPackage
 
 	
-	ToolBuilder open: (CCCommentViewPackage newWith: self selectedSystemCategory)
+	ToolBuilder open: (CCCommentView newForPackage: self selectedSystemCategory)

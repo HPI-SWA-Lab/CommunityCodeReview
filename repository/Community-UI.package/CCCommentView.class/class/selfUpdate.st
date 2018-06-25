@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 selfUpdate
 	
 	"Close all instances before updating to avoid any UI glitches"

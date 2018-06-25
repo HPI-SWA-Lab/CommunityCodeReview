@@ -1,6 +1,6 @@
 toolbuilder
 buildLabelString: aString
 
-	self comments ifEmpty: [ ^ aString].
-	self comments last isDone ifFalse: [^ aString]. 
-	^ aString, ' (done)'
+	^ (self comments notEmpty and: [self comments last isDone]) 
+		ifTrue: [aString, ' (done)']
+		ifFalse: [aString]

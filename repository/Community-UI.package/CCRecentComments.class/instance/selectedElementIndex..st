@@ -9,5 +9,6 @@ selectedElementIndex: anInteger
 		
 	self commentList 
 		metaObject: self selectedElement metaobject;
+		changeStrategyAccordingTo: self selectedElement metaobjectType;
 		refreshCommentList
 		

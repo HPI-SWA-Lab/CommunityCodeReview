@@ -1,6 +1,8 @@
 toolbuilder
 labelString
-	| likes |
+	| likes likesString |
 	likes := self getLikes.
-	likes == 0 ifTrue: [^ String empty].
-	^ '[', likes, ' likes] '
+	likesString := (likes = 0) 
+		ifTrue: [String empty]
+		ifFalse: ['[', likes, ' likes] '].
+	^ self buildLabelString: likesString , (self metaObjectStrategy labelString: self)
