@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 selectedElement
 	
 	self selectedElementIndex = 0 ifTrue: [^ nil].

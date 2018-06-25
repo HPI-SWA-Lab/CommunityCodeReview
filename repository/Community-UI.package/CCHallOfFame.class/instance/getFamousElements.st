@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 getFamousElements
 
 	^ (CCCommentDictionary ratingDict select: [:rating | rating doesStillApply ])

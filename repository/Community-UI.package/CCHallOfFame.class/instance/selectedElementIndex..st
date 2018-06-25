@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 selectedElementIndex: anInteger 
 	
 	selectedElementIndex := anInteger.

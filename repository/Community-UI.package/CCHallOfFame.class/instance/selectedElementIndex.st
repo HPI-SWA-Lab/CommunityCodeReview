@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 selectedElementIndex
 	
 	^ selectedElementIndex ifNil: [0]

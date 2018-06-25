@@ -1,5 +1,5 @@
 {
-	"category" : "Community-Core",
+	"category" : "Community-UI",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "CCCommentViewMethod",
+	"name" : "CCBrowser",
 	"pools" : [
 		 ],
-	"super" : "CCCommentView",
+	"super" : "Browser",
 	"type" : "normal" }
