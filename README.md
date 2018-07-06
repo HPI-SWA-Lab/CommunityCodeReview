@@ -15,6 +15,11 @@ By pushing the I like button you can show other developers that the currently se
 The comments button opens the comments view, which shows the list of all comments concerncing the currently selected meta object.
 In the CC Browser, the speach bubble icon in front of a meta object indicates that this meta objects has been commented.
 
+## Disclaimer
+
+This tool is part of a research project that analysis comments added by its users.
+By using the tool you agree that an **anonymized form** of your comments can be analyzed and can be published anonymously in non-profit research papers.
+
 # Tutorial
 
 ## Adding Comments
