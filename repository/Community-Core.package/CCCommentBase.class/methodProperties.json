@@ -6,8 +6,6 @@
 		"selectorToServerKeyMapping" : "TD 4/25/2018 15:57" },
 	"instance" : {
 		"=" : "TD 4/26/2018 15:20",
-		"addToDictionary" : "pre 2/20/2018 14:48",
-		"appliesTo:" : "pre 1/12/2018 15:17",
 		"asJsonString" : "pre 5/10/2017 14:48",
 		"author" : "TD 3/14/2017 10:40",
 		"author:" : "TD 3/14/2017 10:40",
@@ -20,7 +18,6 @@
 		"findMetaobjectMethod" : "TD 2/20/2018 17:30",
 		"findMetaobjectPackage" : "TD 5/4/2017 09:02",
 		"findMetaobjectWith:" : "TD 2/20/2018 16:52",
-		"hasMetaobjectInSystem" : "pre 6/8/2018 13:32",
 		"hasSameTimestamp:" : "pre 6/8/2018 11:47",
 		"initialize" : "TD 6/8/2018 11:53",
 		"isCommentOnClass" : "pre 4/19/2018 12:21",

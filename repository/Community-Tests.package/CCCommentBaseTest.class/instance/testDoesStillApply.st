@@ -9,4 +9,5 @@ testDoesStillApply
 		by: 'pre'
 		with: (self class >> #testDoesStillApply) getSource.
 		
-	self assert: newComment doesStillApply description: 'A newly created comment should still apply'
+	self assert: newComment doesStillApply description: 'A newly created comment should still apply'	
+	

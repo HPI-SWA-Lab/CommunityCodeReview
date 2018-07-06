@@ -8,7 +8,11 @@ testAddComment
 	comment2 := CCComment newWith: 'comment2'.
 	
 	CCCommentDictionary addComment: comment1 forMethod: methodName inClass: className.
-	self assert: {comment1} asOrderedCollection equals: (CCCommentDictionary getCommentsForMethod: methodName inClass: className).
+	self 
+		assert: {comment1} asOrderedCollection 
+		equals: (CCCommentDictionary getCommentsForMethod: methodName inClass: className).
 	
 	CCCommentDictionary addComment: comment2 forMethod: methodName inClass: className.
-	self assert: {comment1 . comment2} asOrderedCollection equals: (CCCommentDictionary getCommentsForMethod: methodName inClass: className)
+	self 
+		assert: {comment1 . comment2} asOrderedCollection 
+		equals: (CCCommentDictionary getCommentsForMethod: methodName inClass: className)
