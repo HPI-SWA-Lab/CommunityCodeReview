@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testDoesStillApply" : "pre 7/6/2018 09:27" } }
+		"testDoesStillApply" : "pre 7/6/2018 09:27",
+		"testDoesStillApplyDoesNotCareAboutEmptyLines" : "pre 7/6/2018 14:22",
+		"testDoesStillApplyDoesNotCareAboutWhitespace" : "pre 7/6/2018 11:57",
+		"testDoesStillApplyDoesNotCareAboutWhitespaceLines" : "pre 7/6/2018 14:24" } }
