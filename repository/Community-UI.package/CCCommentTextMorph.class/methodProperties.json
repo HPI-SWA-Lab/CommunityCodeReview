@@ -1,7 +1,14 @@
 {
 	"class" : {
 		"formatTimestamp:" : "pre 5/10/2017 17:26",
-		"newFor:" : "pre 7/6/2018 10:38" },
+		"newFor:" : "pre 7/6/2018 11:45" },
 	"instance" : {
 		"addHalo" : "pre 5/2/2017 16:06",
+		"comment" : "pre 7/6/2018 11:45",
+		"comment:" : "pre 7/6/2018 11:45",
+		"handlesMouseDown:" : "pre 7/6/2018 11:41",
+		"mouseDown:" : "pre 7/6/2018 11:38",
+		"mouseUp:" : "pre 7/6/2018 11:41",
+		"openMenu" : "pre 7/6/2018 11:39",
+		"requestToShowSource" : "pre 7/6/2018 11:50",
 		"wantsHalo" : "pre 5/2/2017 15:52" } }

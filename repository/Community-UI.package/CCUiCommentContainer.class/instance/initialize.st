@@ -3,6 +3,8 @@ initialize
 
 	super initialize.
 	self 
+		color: Color transparent;
+		borderWidth: 0;
 		changeTableLayout;
 		cellPositioning: #topLeft;
 		listSpacing: #none;

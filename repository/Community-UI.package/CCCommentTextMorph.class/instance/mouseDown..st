@@ -1,4 +1,4 @@
 halos and balloon help
-wantsHalo
+mouseDown: evt 
 
-	^ false
+	
