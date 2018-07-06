@@ -4,15 +4,18 @@
 		"open" : "pre 6/8/2018 13:18",
 		"registerInWorldMenu" : "pre 6/25/2018 14:48" },
 	"instance" : {
-		"aboutToStyle:" : "pre 6/8/2018 14:11",
+		"aboutToStyle:" : "pre 7/6/2018 11:01",
 		"buildWith:" : "pre 6/25/2018 15:13",
 		"commentList" : "pre 6/8/2018 14:23",
 		"commentList:" : "pre 6/8/2018 14:22",
 		"contents" : "pre 6/8/2018 14:10",
 		"getMostRecentComments" : "pre 6/8/2018 14:07",
 		"getMostRecentCommentsLabels" : "pre 6/8/2018 14:07",
-		"initialize" : "pre 6/8/2018 14:37",
+		"initialize" : "pre 7/6/2018 10:42",
 		"numberOfRecentCommentsToShow" : "pre 6/8/2018 13:27",
+		"selectedClassOrMetaClass" : "pre 7/6/2018 11:00",
 		"selectedElement" : "pre 6/8/2018 14:08",
 		"selectedElementIndex" : "pre 6/8/2018 13:18",
-		"selectedElementIndex:" : "pre 6/25/2018 16:03" } }
+		"selectedElementIndex:" : "pre 6/25/2018 16:03",
+		"selectedMessageName" : "pre 7/6/2018 11:00",
+		"update:" : "pre 7/6/2018 10:50" } }

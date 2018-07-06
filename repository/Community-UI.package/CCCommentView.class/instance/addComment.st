@@ -7,3 +7,4 @@ addComment
 	self commentText: String empty.
 	self changed: #commentText.
 	self changed: #relabel.
+	self changed: #commentAdded.

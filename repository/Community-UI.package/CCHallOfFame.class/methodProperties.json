@@ -4,11 +4,13 @@
 		"open" : "pre 2/20/2018 16:53",
 		"registerInWorldMenu" : "pre 6/25/2018 14:43" },
 	"instance" : {
-		"aboutToStyle:" : "TD 4/25/2018 15:43",
+		"aboutToStyle:" : "pre 7/6/2018 11:01",
 		"buildWith:" : "pre 4/19/2018 11:33",
 		"contents" : "TD 4/25/2018 16:23",
 		"getFamousElementLabels" : "pre 2/20/2018 17:32",
 		"getFamousElements" : "pre 4/19/2018 12:00",
+		"selectedClassOrMetaClass" : "pre 7/6/2018 11:06",
 		"selectedElement" : "pre 4/19/2018 11:32",
 		"selectedElementIndex" : "pre 2/20/2018 17:09",
-		"selectedElementIndex:" : "pre 2/20/2018 17:30" } }
+		"selectedElementIndex:" : "pre 2/20/2018 17:30",
+		"selectedMessageName" : "pre 7/6/2018 11:07" } }
