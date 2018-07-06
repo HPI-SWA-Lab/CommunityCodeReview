@@ -18,7 +18,8 @@ baseline: spec
 	
             spec
                 package: 'Community-Core' with: [ spec requires: #('Widgets' 'JSON' 'Icons')];
-                package: 'Community-Tests' with: [ spec requires: #('default') ].
+                package: 'Community-Tests' with: [ spec requires: #('default') ];
+		    package: 'Community-UI' with: [spec requires: #('Community-Core')].
             spec
                 group: 'default' with: #('Community-Core' 'Community-UI');
                 group: 'Tests' with: #('Community-Tests') ]
