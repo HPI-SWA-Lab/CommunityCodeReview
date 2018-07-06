@@ -10,11 +10,11 @@ newFor: aComment
 	aComment doesStillApply
 		ifTrue: [ | hightlightColor |
 			hightlightColor := UserInterfaceTheme current 
-				get: #selectionTextColor for: MenuItemMorph.
+				get: #focusedLabelColor for: SystemWindow.
 			commentText addAttribute: (TextColor color: hightlightColor)]
 		ifFalse: [ | color |
 			color := UserInterfaceTheme current 
-				get: #textColor for: MenuItemMorph.
+				get: #unfocusedLabelColor for: SystemWindow.
 			commentText addAttribute: (TextColor color: color)].
 
 	^ self new
