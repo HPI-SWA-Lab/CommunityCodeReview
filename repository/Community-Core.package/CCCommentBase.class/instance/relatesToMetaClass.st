@@ -1,4 +1,4 @@
 testing
-isCommentOnMetaClass
+relatesToMetaClass
 
 	^ self metaobjectType = #MetaClass

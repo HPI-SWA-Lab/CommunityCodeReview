@@ -8,4 +8,7 @@ getRatingForMethod: aMethodName inClass: aClassName
 	keyName := (aClassName , '>>#' , aMethodName) asSymbol.
 	^ self ratingDict 
 		at: keyName 
-		ifAbsent: (CCRating new targetHash: keyName asString; metaobjectType: #CompiledMethod)
+		ifAbsent: (CCRating new 
+					targetHash: keyName asString; 
+					metaobjectType: #CompiledMethod;
+					yourself)

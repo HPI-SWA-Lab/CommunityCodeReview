@@ -5,4 +5,9 @@ getRatingForClass: aClassName
 	aClassName ifNil: [^ CCRating new targetHash: aClassName].
 	
 	keyName := aClassName asSymbol.
-	^ self ratingDict at: keyName ifAbsent: (CCRating new targetHash: keyName asString; metaobjectType: #Class)
+	^ self ratingDict 
+		at: keyName
+		ifAbsent: (CCRating new 
+					targetHash: keyName asString; 
+					metaobjectType: #Class;
+					yourself)

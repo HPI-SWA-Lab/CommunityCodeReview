@@ -1,4 +1,4 @@
 testing
-isCommentOnPackage
+relatesToPackage
 
 	^ self metaobjectType = #String

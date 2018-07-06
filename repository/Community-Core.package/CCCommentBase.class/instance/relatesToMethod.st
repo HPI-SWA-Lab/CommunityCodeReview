@@ -1,4 +1,4 @@
 testing
-isCommentOnMethod
+relatesToMethod
 
 	^ self metaobjectType = #CompiledMethod
